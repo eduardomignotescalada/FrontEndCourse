@@ -5,22 +5,30 @@
     <meta charset = "UTF-8" />
     <style>
         body {background-color: beige;}
+        div.container{
+                    width: 95%;
+                    border: 1px solid beige;
+                     }
         header {
                 padding: 1em;
                 color: white;
-                background-color: black;
+                background-color: beige;
                 clear: left;
                 text-align: left;
                 }
         article {
                 float: left;
-                max-width: 1000px;
+                max-width: 900px;
                 margin: 0;
                 padding: 1em;
             }
         aside {
                 margin-left: 170px;
-                border-left: 1px solid gray;
+                border-left: 1px solid lightslategray;
+                border-right: 1px solid lightslategray;
+                border-bottom: 1px solid lightslategray;
+                border-top: 1px solid lightslategray;
+                background-color: lightslategray;
                 padding: 1em;
                 overflow: hidden;
                 }
@@ -42,6 +50,7 @@
 </head>
 
 <body>
+<div class="container">
     <header>
         <p>
             <img src = "logo zoror.png"
@@ -93,10 +102,37 @@
     </article>
     <aside>
            <h2>ABOUT THE AUTHOR</h2>
+            <p>
+            <img src = "ZororProfilePic.png"
+                 alt = "Zoror Profile Pic" />
+            </p>
             <p>Let me introduce myself: my names Zozo. I was born on 23 November 2005.</p>
             <p>A bit meager, is it not? This is why I’ve now decided to write my biography to let my readers know who I really am.</p>
+            <p>
+            <img src = "ZororSocialMedia.png"
+                 alt = "Zoror Profile Pic" />
+            </p>
     </aside>
 <footer>
+    <table height="10px">
+    <tr>
+        <td width="400px"></td>
+        <td width="70px">
+            <a href="#">MY LAST TWEET</a>
+            <p>Hey ya</p>
+            <p>12/05</p>
+        </td>
+        <td width="120px">
+            <a href="#">MY PICTURE</a>
+            <p>
+            <img src = "ZororMyPictures.png"
+                 alt = "Zoror My Pictures" />
+            </p>
+        </td>
+        <td width="120px"><a href="#">MY FRIENDS</a></td>
+    </tr>
+</table>
+    <!--
         <nav>
             <div class="navfooter" id="navfooter">
               <a class="#MyLastWeek" href="#MyLastWeek">My Last Week</a>
@@ -104,7 +140,9 @@
               <a href="#MyFriends">My Friends</a>
             </div>
         </nav>
+  -->
 </footer>
+</div>
 </body>
 </html>
 
