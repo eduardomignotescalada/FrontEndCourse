@@ -18,7 +18,7 @@ nb: I tried with  body and .body and both works
 
 /**
 *CHANGING FONT COLOR ACCORDING TO WIDTH
-*when with is min 700 font color of h1 will change to blue violet
+*when width is min 700 font color of h1 will change to blue violet
 */
 
 @media (min-width:700px) {
@@ -29,7 +29,7 @@ nb: I tried with  body and .body and both works
 
 /**
 *CHANGING FONT TYPE ACCORDING TO WIDTH
-*when with is min 900 font family  will change to fantasy
+*when width is min 900 font family  will change to fantasy
 */
 
 @media (min-width:900px) {
