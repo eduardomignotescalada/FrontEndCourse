@@ -4,8 +4,7 @@
 
     <title>Homepage Web Design course</title>
 
-    <!-- here I am going to link to my CSS
-rel is to say it's linking to a stylesheet, type is for the type of document, and href is the path to find this file-->
+    <!-- here I am going to link to the boostrap libary-->
     <link
           rel="stylesheet"
           type="text/css"
@@ -34,25 +33,35 @@ rel is to say it's linking to a stylesheet, type is for the type of document, an
 
 <hr> <!-- this is to put a ligne , teacher put <hr></hr> but brackets says to only put <hr>-->
 
+<div class="container">
 <h1>This is my first web page</h1>
-<h2> <!-- h1 and h2 have different formating style -->
-    This is the subtitle
-</h2>
-<p class="indent">
-    In the first paragraph, the totality of the first paragraph has an indent thanks to p class indent.
-</p>
+</div>
+<!-- h1 and h2 have different formating style -->
 
-<p><!-- p is to create a paragraph -->
-    <span class="indent">In</span> the second paragraph, only the first letter has an indent thanks to span class indent
-</p>
+<div clas="row">
+    <div class="col-md-6">
+        <h2>
+            This is the subtitle
+        </h2>
+        <p class="indent">
+            In the first paragraph, the totality of the first paragraph has an indent thanks to p class indent.
+        </p>
 
-<p class="gap_be"><!-- p is to create a paragraph -->
-    <span class="indent">In</span> the third paragraph, not only I have the first letter with an indent but also I have a gap below that will affect the 4th paragraph
-</p>
+        <p>
+                <span class="indent">In</span> the second paragraph, only the first letter has an indent thanks to span class indent
+        </p>
 
-<p>
-<span class="indent">In</span> the 4th paragraph
-</p>
+        <p class="gap_be">
+                <span class="indent">In</span> the third paragraph, not only I have the first letter with an indent but also I have a gap below that will affect the 4th paragraph
+        </p>
+
+        <p>
+                <span class="indent">In</span> the 4th paragraph
+        </p>
+    </div>
+</div>
+
+
 
 </body>
 </html>
