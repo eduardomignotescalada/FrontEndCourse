@@ -13,6 +13,11 @@ color:beige;
 background: brown;
 }
 
+.greenlink:hover {
+color:darkgreen;
+background:lightgray;
+}
+
 /* a hover selector > when tue user hover the a (links) then we will asign a property*/
 
 h1{
@@ -26,4 +31,8 @@ monospace every letter has same with which means they will perfectly fit in colu
 
 .indent {
     margin-left:10px;
+}
+
+.gap_be {
+    margin-bottom:40px;
 }
