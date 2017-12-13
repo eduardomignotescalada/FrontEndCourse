@@ -23,3 +23,7 @@ h1{
 sans serif is without the wigly bit
 most wellknow serif is times new roman
 monospace every letter has same with which means they will perfectly fit in columns*/
+
+.indent {
+    margin-left:10px;
+}
