@@ -1,0 +1,10 @@
+/** This is a comment that the browser will ignore,
+* Put your CSS code into this file
+*/
+h1 {
+font-family: serif; 
+color: #FEEF07;
+font-size: 20px;
+}
+
+/* Comment: I had changed font of h1 tag, it's color and it's size. Changed in 3 ways  */
