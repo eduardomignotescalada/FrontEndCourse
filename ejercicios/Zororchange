@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zoror ejercicio</title>
+    <meta charset = "UTF-8" />
+    <style>
+        body {background-color: beige;}
+        div.container{
+                    width: 95%;
+                    border: 1px solid beige;
+                     }
+        header {
+                padding: 1em;
+                color: white;
+                background-color: beige;
+                clear: left;
+                text-align: left;
+                }
+        article {
+                float: left;
+                max-width: 900px;
+                margin: 0;
+                padding: 1em;
+            }
+        aside {
+                margin-left: 170px;
+                border-left: 1px solid lightslategray;
+                border-right: 1px solid lightslategray;
+                border-bottom: 1px solid lightslategray;
+                border-top: 1px solid lightslategray;
+                background-color: lightslategray;
+                padding: 1em;
+                overflow: hidden;
+                }
+        h1   {color: black;}
+        p    {color: black;}
+        .navbar {text-align: right; width: 88%;font-family: "cambria"; float: middle;}
+        .navtitle {font-family: "cambria";}
+        footer {
+                padding: 1em;
+                color: white;
+                background-color: beige;
+                clear: left;
+                text-align: center;
+                font-family: "cambria";
+                width: 88%;
+            }
+    </style>
+
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <p>
+            <img src = "logo zoror.png"
+                 alt = "logo zoror" />
+        </p>
+    </header>
+
+    <nav class="">
+        <div class="navtitle">Travel diaries</div>
+        <div class="navbar">
+            <!--
+            <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="company.html">BLOG</a></li>
+                  <li><a href="team.html">RESUME</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            -->
+            <a class="#Home" href="#home">HOME</a>
+            <a href="#Blog">BLOG</a>
+            <a href="#Resume">RESUME</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </nav>
+
+    <p>
+        <img src = "banner zoror.png"
+        alt = "banner zoror" />
+    </p>
+<hr>
+    <article>
+        <!--
+        <div class="h1travel">
+        -->
+            <h1>I AM A GREAT TRAVELER</h1>
+        <!--
+        </div>
+        -->
+        <!--
+        <div class="content">
+        -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in massa eget risus pulvinar vestibulum sed at erat. Maecenas mollis sollicitudin molestie. Phasellus vitae gravida ante. Nullam quis magna ultricies, blandit turpis et, blandit sem. Sed ac mollis odio, in pharetra ante. In tristique, arcu sollicitudin pulvinar efficitur, nunc urna molestie urna, sit amet scelerisque orci massa et neque. Praesent varius mi at lorem blandit tincidunt. Etiam varius fringilla ex in dignissim. Mauris pretium, elit rhoncus maximus aliquet, ex eros mattis turpis, a consectetur erat velit vitae purus. In sit amet mattis metus, eget tempus orci. Proin blandit condimentum elementum.</p>
+            <p>Mauris porttitor erat urna, a imperdiet tortor laoreet non. Proin rutrum, leo in mollis hendrerit, urna magna gravida felis, nec rhoncus justo purus sit amet eros. Integer volutpat porttitor nisl, a elementum nisi efficitur in. Nam et ornare elit. Integer ac magna arcu. Sed placerat tincidunt libero accumsan congue. Cras ullamcorper, neque ut rhoncus feugiat, quam sapien facilisis est, id tempor arcu turpis eu nunc. Sed venenatis quis sem in luctus. Curabitur vel euismod augue. Nullam lobortis metus vitae massa maximus, sed faucibus tellus venenatis.</p>
+            <p>Etiam at odio ex. Nulla libero erat, posuere non odio sit amet, bibendum efficitur purus. Suspendisse feugiat felis odio, ac rutrum enim pellentesque laoreet. Quisque elit leo, sollicitudin faucibus sodales nec, ornare nec risus. Vestibulum cursus elementum nulla, vitae vestibulum erat lobortis vel. Vestibulum dignissim hendrerit pulvinar. Donec consectetur ultricies magna quis commodo. Sed bibendum velit ut dolor egestas semper. Quisque sollicitudin est blandit tortor pharetra, id mattis ligula tincidunt. Proin gravida interdum leo, in imperdiet sapien congue sit amet. Suspendisse ut augue rhoncus, tempor magna et, mollis odio. Quisque gravida orci sed leo facilisis, vitae consequat felis congue. Curabitur quis aliquam nulla. Vivamus rutrum scelerisque arcu eu mollis.</p>
+              <!--
+            </div>
+                -->
+   <hr>
+    </article>
+    <aside>
+           <h2>ABOUT THE AUTHOR</h2>
+            <p>
+            <img src = "ZororProfilePic.png"
+                 alt = "Zoror Profile Pic" />
+            </p>
+            <p>Let me introduce myself: my names Zozo. I was born on 23 November 2005.</p>
+            <p>A bit meager, is it not? This is why I’ve now decided to write my biography to let my readers know who I really am.</p>
+            <p>
+            <img src = "ZororSocialMedia.png"
+                 alt = "Zoror Profile Pic" />
+            </p>
+    </aside>
+<footer>
+    <table height="10px">
+    <tr>
+        <td width="400px"></td>
+        <td width="70px">
+            <a href="#">MY LAST TWEET</a>
+            <p>Hey ya</p>
+            <p>12/05</p>
+        </td>
+        <td width="120px">
+            <a href="#">MY PICTURE</a>
+            <p>
+            <img src = "ZororMyPictures.png"
+                 alt = "Zoror My Pictures" />
+            </p>
+        </td>
+        <td width="120px">
+        <a href="#">MY FRIENDS</a>
+            <ul>
+                <li><a href="Articulos.html">puppi the rabbit</a></li>
+                <li><a href="Hoy.html">Mr Kawai</a></li>
+                <li><a href="Tips&Tricks.html">Mr Panda</a></li>
+            </ul>
+        </td>
+    </tr>
+</table>
+    <!--
+        <nav>
+            <div class="navfooter" id="navfooter">
+              <a class="#MyLastWeek" href="#MyLastWeek">My Last Week</a>
+              <a href="#MyPictures">My Pictures</a>
+              <a href="#MyFriends">My Friends</a>
+            </div>
+        </nav>
+  -->
+</footer>
+</div>
+</body>
+</html>
+
