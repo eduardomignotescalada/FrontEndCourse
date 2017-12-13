@@ -1,5 +1,46 @@
+@media (min-width:750px) {
+    .column{
+        display:inline-block;
+        width:200px;
+        border:1px solid black;
+    }
+}
+
+
+@media (min-width:1000px) {
+   .column{
+        display:inline-block;
+        width:500px;
+        border:2px solid grey;
+    }
+}
+
+
+/* Changing background according to width/*
+
+
+/*
+@media (min-width:500px) {
+    body {
+        background: red;
+    }
+}
+
+
 @media (min-width:1000px) {
     body {
         background: green;
     }
 }
+/*
+
+/* EXPLANATION
+The @media works like a if
+it assign specifing formating when browser window meets a criteria
+in this case when the width is minimum 1000 then it will get green
+
+I can even add that if it its 500px it's red BUT BE CAREFUL as I need to put it in the right order.
+
+If i put min 500px in the end (after min 1000px green) then it will be always be red to change from green to red i need to put first @media red 500 and then @media green 1000
+
+*/
