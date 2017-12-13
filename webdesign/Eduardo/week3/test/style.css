@@ -1,3 +1,28 @@
-/** This is a comment that the browser will ignore,
-* Put your CSS code into this file
+/**
+*CHANGING BACKGROUND ACCORDING TO WIDTH
+*when with is min 500 background color will change to beige
 */
+
+@media (min-width:500px) {
+    body {
+        background: beige;
+    }
+}
+
+/**
+*CHANGING FONT COLOR ACCORDING TO WIDTH
+*when with is min 750 font color of h1 will change to purple
+*/
+
+@media (min-width:7500px) {
+   h1{
+        color:purple;
+    }
+}
+
+/**
+*CHANGING FONT TYPE ACCORDING TO WIDTH
+*when with is min 100 font  will change to monocle
+*/
+
+
