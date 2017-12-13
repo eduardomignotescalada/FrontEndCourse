@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>El Viaje</title>
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <style media="screen">
+
+      body{
+        font-family: 'Handlee', cursive;
+        background-color: #ede8da;
+      }
+
+      button{
+          float: right;
+          margin-top: 15px;
+          margin-right: 10px;
+          background: #a34444;
+          border-radius: 8px;
+          border: 1px solid black;
+          color: white;
+      }
+
+      article{
+        display: inline-block;
+      }
+
+      .foticos{
+        width: 40px;
+      }
+
+      .articulo1{
+        width: 66%;
+      }
+
+      .articulo2{
+        width: 25%;
+        margin: 19px 5px 19px 10px;
+        padding: 12px;
+        float: right;
+        background: #99917d;
+        border-radius: 10px;
+      }
+
+      .hola{
+        width: 100px;
+      }
+
+      .articulo2 h2 {
+        font-size: 15px;
+      }
+
+      .guarro{
+        margin-left: 10px
+      }
+
+      .guarro{
+        color: white;
+      }
+
+      figure{
+        margin: 0;
+      }
+
+      .contenedor {
+        width: 80%;
+        margin: auto;
+      }
+
+      .navegacion h3, ul{
+        display: inline-block;
+      }
+
+      .navegacion ul li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .navegacion ul li a{
+        text-decoration: none;
+        color: black;
+      }
+
+      .navegacion ul{
+        float: right;
+      }
+
+      .navegacion{
+        margin: 0 15px;
+      }
+
+      .portada p{
+        display: inline-block;
+        border-radius: 10px;
+      }
+
+      .fondoportada{
+        background-image: url('images/portada.jpg');
+        height: 160px;
+        border-radius: 10px;
+        margin-top:20px;
+      }
+
+      .foot{
+        display: inline-block;
+      }
+
+      .hdp{
+        display: inline-block;
+        margin-top: 107px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+      }
+
+      .centrado{
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Cabecera -->
+    <header class="contenedor">
+      <figure>
+        <img src="images/logo.jpg" width="110px" alt="imagen error">
+      </figure>
+    </header>
+    <!-- /Cabecera -->
+    <!-- Barra de navegación -->
+    <nav class="contenedor">
+      <div class="navegacion">
+        <h3>Travel diaries</h3>
+        <ul>
+          <li>
+            <a href="#">HOME</a>
+          </li>
+          <li>
+            <a href="#">BLOG</a>
+          </li>
+          <li>
+            <a href="#">RESUME</a>
+          </li>
+          <li>
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <hr class="contenedor">
+
+    <!-- /Barra de navegación -->
+    <!-- Portada-Imagen -->
+    <section class="contenedor fondoportada" >
+      <div class="portada">
+        <div class="hdp">
+          <p class="guarro">Reflections on my holiday in the United States</p>
+          <button>See article</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portada-Imagen -->
+    <!-- Contenido -->
+    <section class="contenedor">
+      <article class="articulo1">
+        <h2>I'M A GREAT TRAVELLER</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        <p>Expetenda tincidunt in sed, ex partem placerat sea, porro commodo ex eam. His putant aeterno interesset at. Usu ea mundi tincidunt, omnium virtute aliquando ius ex. Ea aperiri sententiae duo. Usu nullam dolorum quaestio ei, sit vidit facilisis ea. Per ne impedit iracundia neglegentur. Consetetur neglegentur eum ut, vis animal legimus inimicus id.</p>
+        <p>His audiam deserunt in, eum ubique voluptatibus te. In reque dicta usu. Ne rebum dissentiet eam, vim omnis deseruisse id. Ullum deleniti vituperata at quo, insolens complectitur te eos, ea pri dico munere propriae. Vel ferri facilis ut, qui paulo ridens praesent ad. Possim alterum qui cu. Accusamus consulatu ius te, cu decore soleat appareat usu.</p>
+      </article>
+      <article class="articulo2">
+        <div>
+          <h2 class="centrado">ABOUT THE AUTOR</h2>
+          <div class="centrado">
+            <img class="hola" src="images/vaca.png" alt="">
+          </div>
+          <p>Expetenda tincidunt in sed, ex partem placerat sea, porro commodo ex eam.</p>
+          <p>His audiam deserunt in, eum ubique voluptatibus te.</p>
+          <div class="centrado">
+            <a href="#"><img class="foticos" src="images/1.png"></a>
+            <a href="#"><img class="foticos" src="images/2.png"></a>
+            <a href="#"><img class="foticos" src="images/3.png"></a>
+            <a href="#"><img class="foticos" src="images/4.png"></a>
+            <a href="#"><img class="foticos" src="images/5.png"></a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- /Contenido -->
+    <hr class="contenedor">
+    <!-- Footer -->
+    <footer class="contenedor">
+      <div class="foot">
+        <h2>MY LAST TWEET</h2>
+        <p></p>
+        <p></p>
+      </div>
+      <div class="foot">
+        <h2>MY PICTURES</h2>
+
+      </div>
+      <div class="foot">
+        <h2>MY FRIENDS</h2>
+        <div class="">
+
+        </div>
+        <div class="">
+
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
+
+
+
+  </body>
+</html>
