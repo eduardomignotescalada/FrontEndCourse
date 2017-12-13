@@ -1,6 +1,12 @@
 /**
+*For this Exercise you will have to SLOWLY change the width of your screen to see the 3 different changes in: 1. background color 2. color of text 3. font family of text
+*/
+
+
+
+/**
 *CHANGING BACKGROUND ACCORDING TO WIDTH
-*when with is min 500 background color will change to beige
+*when width is min 500 background color will change to beige
 nb: I tried with  body and .body and both works
 */
 
