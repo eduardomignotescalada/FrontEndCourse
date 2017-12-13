@@ -4,19 +4,28 @@
 
     <title>Homepage Web Design course</title>
 
-    <!-- here I am going to link to the boostrap libary-->
+    <!-- here I am going to link to the BOOTSTRAP LIBRARY-->
     <link
           rel="stylesheet"
           type="text/css"
           href="../week3/bootstrap.css"
      />
 
+     <!-- Connecting to a new special style spreadsheet -->
+
+    <link
+          rel="stylesheet"
+          type="text/css"
+          href="stylebs.css"
+     />
+
+
 </head>
 
 <body>
 
 
-<!-- here i will create a nav bar at the top of my pages -->
+
 <a href="eduindex.html">
     Go to the index page
 </a>
@@ -29,19 +38,23 @@
     Go to the contact page
 </a>
 
-
-
-<hr> <!-- this is to put a ligne , teacher put <hr></hr> but brackets says to only put <hr>-->
+<hr>
 
 <div class="container">
 <h1>This is my first web page</h1>
 </div>
-<!-- h1 and h2 have different formating style -->
+
+
+
+<!-- DOING RESPONSIVE GRID
+it means we have a row and then we have columns inside the row, we can have as many columns as we want inside the row -->
+
 
 <div clas="row">
-    <div class="col-md-6">
+
+    <div class="col-md-3 thin_border">
         <h2>
-            This is the subtitle
+            This is the panel 1
         </h2>
         <p class="indent">
             In the first paragraph, the totality of the first paragraph has an indent thanks to p class indent.
@@ -59,6 +72,28 @@
                 <span class="indent">In</span> the 4th paragraph
         </p>
     </div>
+
+     <div class="col-md-9 thin_border">
+        <h2>
+            This is the panel 2
+        </h2>
+        <p class="indent">
+            In the first paragraph, the totality of the first paragraph has an indent thanks to p class indent.
+        </p>
+
+        <p>
+                <span class="indent">In</span> the second paragraph, only the first letter has an indent thanks to span class indent
+        </p>
+
+        <p class="gap_be">
+                <span class="indent">In</span> the third paragraph, not only I have the first letter with an indent but also I have a gap below that will affect the 4th paragraph
+        </p>
+
+        <p>
+                <span class="indent">In</span> the 4th paragraph
+        </p>
+    </div>
+
 </div>
 
 
