@@ -5,4 +5,21 @@ color:black;
 
 a {
 color:brown;
+text-decoration:none;
 }
+
+a:hover {
+color:beige;
+background: brown;
+}
+
+/* a hover selector > when tue user hover the a (links) then we will asign a property*/
+
+h1{
+    font-family:"Times new roma" serif;
+}
+
+/*serif is with wigly thing in the end
+sans serif is without the wigly bit
+most wellknow serif is times new roman
+monospace every letter has same with which means they will perfectly fit in columns*/
