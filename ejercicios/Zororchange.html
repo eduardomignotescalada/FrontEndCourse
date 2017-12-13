@@ -9,10 +9,17 @@
                     width: 95%;
                     border: 1px solid beige;
                      }
-        header {
+        .logoheader {
                 padding: 1em;
                 color: white;
                 background-color: beige;
+                clear: left;
+                text-align: left;
+                }
+        .textbanner {
+                padding: 1em;
+                color: white;
+                background-color: black;
                 clear: left;
                 text-align: left;
                 }
@@ -34,6 +41,7 @@
                 }
         h1   {color: black;}
         p    {color: black;}
+        button {float: right;}
         .navbar {text-align: right; width: 88%;font-family: "cambria"; float: middle;}
         .navtitle {font-family: "cambria";}
         footer {
@@ -52,12 +60,12 @@
 <body>
 <div class="container">
     <header>
+        <div class="logoheader">
         <p>
             <img src = "logo zoror.png"
                  alt = "logo zoror" />
         </p>
-    </header>
-
+        </div>
     <nav class="">
         <div class="navtitle">Travel diaries</div>
         <div class="navbar">
@@ -75,11 +83,14 @@
             <a href="#contact">CONTACT</a>
         </div>
     </nav>
-
+    </header>
     <p>
-        <img src = "banner zoror.png"
+        <img src = "ZororBanner2.png"
         alt = "banner zoror" />
     </p>
+    <div class="textbanner">Reflection on my travel in the United States</div>
+    <button type="button">See Article</button>
+
 <hr>
     <article>
         <!--
