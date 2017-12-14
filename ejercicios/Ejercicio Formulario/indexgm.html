@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ejemplos de formularios</title>
+  </head>
+  <body>
+    <h1>Formularios</h1>
+    <nav>
+      <li>
+        <a href="#"></a>
+      </li>
+    </nav>
+    <section>
+      <!--Formulario 1-->
+      <h2>Formulario 1</h2>
+      <div>
+        <form name="miformulario" id="myform" action="index.html" method="post" enctype="multipart/form-data"> <!--enctype para enviar los files subidos-->
+          <!--Nombre de usuario-->
+          <div>
+            <label for="nombre">Nombre de usuario:</label> <br>
+            <input type="text" id="nombre" name="nombre" value="">
+          </div><br>
+          <!--Contraseña-->
+          <div>
+            <label for="password">Contraseña:</label> <br>
+            <input type="password" id="password" name="pass"  value="">
+          </div><br>
+          <!--Repetir Contraseña-->
+          <div>
+            <label for="password2">Repetir Contraseña:</label> <br>
+            <input type="pass2" id="password2" name="pass"  value="">
+          </div><br>
+          <!--Avatar (multiple es para varios ficheros)-->
+          <div>
+            <label for="avatar">Avatar:</label> <br>
+            <input type="file" id="avatar" name="fichero[]" multiple="multiple" value="">
+          </div> <br>
+          <!--Boton Enviar-->
+          <div>
+            <input type="submit" name="submit" value="Enviar" id="submit">
+          </div>
+        </form>
+      </div><br><br><br>
+      <!--Formulario 2-->
+      <h2>Formulario 2</h2>
+      <div>
+        <form action="formularios.php" id="form2" method="post" name="form2">
+          <div>
+            <label>Género:</label>
+            <label for="generoF">Femenino</label>
+            <input type="radio" id="generoF" name="genero" checked="checked" value="f">
+            <label for="generoM">Masculino</label>
+            <input type="radio" id="generoM" name="genero" value="m">
+          </div><br>
+          <div>
+            <label for="condiciones">Acepta las condiciones del servicio?</label>
+            <input type="checkbox" id="condiciones" name="form2">
+          </div><br>
+          <div>
+            <input type="submit" name="submit" value="Enviar" id="submit2">
+          </div><br>
+          <h2>Formulario 3</h2>
+          <div>
+            <label for="clase">Clase Social</label>
+            <select id="clase" name="clase_social">
+              <option value="none">Ninguna</option>
+                <optgroup label="Clase Baja">
+                  <option value="bb">Baja-Baja</option>
+                  <option value="bm">Baja-Media</option>
+                </optgroup>
+                <optgroup label="Clase Media">
+                  <option value="mb">Media-Baja</option>
+                  <option value="ma" selected="selected">Media-Alta</option><!--selected funcona como checked-->
+                </optgroup>
+                <optgroup label="Clase Alta">
+                  <option value="ab">Alta-Baja</option>
+                  <option value="aa">Alta-Alta</option>
+                </optgroup>
+                <option value="sa">Super-Alta</option>
+                <option value="god">Dios</option>
+              </select>
+            </div>
+            <br>
+            <div>
+              <label for="observaciones">Observaciones:</label>
+              <textarea name="observaciones" maxlength="50" rows="5" cols="80"></textarea>
+            </div><br>
+            <div>
+              <input type="submit" name="submit" value="Enviar" id="clase">
+            </div><br>
+          </form>
+        </div>
+        <h1>Formulario 4</h1>
+        <div>
+          <form action="formularios.php" method="post">
+            <!--URL-->
+            <div>
+              <label for="">Blog</label>
+              <input type="url" name="url" id="url" value="" required placeholder="manolo">
+            </div><br>
+            <!--Email-->
+            <div>
+              <label for="">Email</label>
+              <input type="email" name="correo" id="email" minlength="7" value="" required>
+            </div><br>
+            <!--Telefono-->
+            <div>
+              <label for="">Telefono</label>
+              <input type="tel" name="telefono" id="tlf" value="" required>
+            </div><br>
+            <!--Color-->
+            <div>
+              <label for="">Color</label>
+              <input type="color" name="color" id="color" value="" required>
+            </div><br>
+            <!--Fecha-->
+            <div>
+              <label for="">Fecha</label>
+              <input type="date" name="date" id="date" value="" required>
+            </div><br>
+
+            <input type="submit" name="submit" id="submit3" value="Enviar" >
+          </form>
+        </div>
+      </section>
+    </body>
+    </html>
