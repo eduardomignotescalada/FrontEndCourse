@@ -127,7 +127,7 @@
                       action="formulario.php"
                       method="post">
     
-                 <!--Otro tipo de formulario-->
+                 <!--Pedir una url (Blog)-->
                  <div>
                         <label for="url">Blog:</label>
                         <input type="url" name ="url" id="url" value="">
@@ -194,42 +194,48 @@
                     </div>
             </form>
             
-    <h2>F6 - Formulario del ejercicio slide 76</h2>
+    <h2>F6 - Formulario del ejercicio slide 76 CREATE AN ACCOUNT</h2>
 
             <!-- El formulario -->
-            <form name="mi formulario5"
+            <form name="mi formulario6"
                       id="miform6"
                       action="answer.html"
                       method="post">
-    
-                 <!--Fondo de pantalla de un color-->
+                <!-- Nombre del usuario -->
+            <div>
+                <label for="nombre">Nombre de Usuario</label>
+                <input type="text" id="nombre6" name="nombre6" value="" required>
+            </div>
+              <!--email con algunas caracteristicas-->
                  <div>
-                        <label for="color">Fondo de pantalla:</label>
-                        <input type="color" name ="color" id="color" value="#ffffff" >
+                        <label for="email">email:</label>
+                        <input type="email" name ="correo" id="email" value=""  minlenght="" maxlength="" required>
                 </div> 
 
-                <!--Fecha-->
+                <!--Telefono con algunas caracteristicas-->
                  <div>
-                        <label for="date">Fecha de nacimiento:</label>
-                        <input type="date" name ="date" id="date" value="" >
+                        <label for="tlf">Telefono:</label>
+                        <input type="tel" name ="telefono" id="tlf" value=""  minlenght="9" required>
                 </div> 
-
-                <!--Time-->
-                 <div>
-                        <label for="time">Horario:</label>
-                        <input type="time" name ="time" id="time" value="" >
-                </div> 
-
-                <!--Otro campo standard: text area-->
-                 <div>
-                     <label for="observaciones">Observaciones</label>
-                     <textarea id="observaciones" name="rangosalarial" maxlength="50">
-                     </textarea>  
-               </div> 
-
+            
+            
+            
+            <!-- Password -->
+            <div>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password6" name="password6" value="" required>
+            </div>  
+            
+            <!--checkbox acceptar condiciones-->
+            <div>
+                <label for="condiciones6">Acepta las condiciones</label>
+                <input type="checkbox" id="condiciones6" name="form6" required value="">
+            </div>
+            
+             
                 <!--Boton enviar -->
                     <div>
-                        <input type="submit" name="submit5" value="Enviar" id="submit5">
+                        <input type="submit" name="submit6" value="Enviar" id="submit6">
                     </div>
             </form>
     
