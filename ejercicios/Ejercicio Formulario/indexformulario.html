@@ -15,9 +15,10 @@
     <form name="mi formulario"
           id="miform"
           action="formulario.php"
-          method="post"
+          method="post">
+     </form>
           
-    <!--Nombre del usuario -->
+    <!-- Nombre del usuario -->
     <div>
         <label for="nombre">Nombre de Usuario</label>
         <input type="text" id="nombre" name="nombre" value="">
@@ -78,6 +79,42 @@
          </select>   
    </div> 
     
+     <!--Otro tipo de formulario-->
+     <div>
+            <label for="url">Blog:</label>
+            <input type="url" name ="url" id="url" value="">
+            <input type="submit" name="submit" id="submit3" value="enviar" placeholder="testplaceholder">
+    </div> 
+    
+     <!--email con algunas caracteristicas-->
+     <div>
+            <label for="email">email:</label>
+            <input type="email" name ="correo" id="email" value="" required minlenght="" maxlength="">
+    </div> 
+    
+    <!--Telefono con algunas caracteristicas-->
+     <div>
+            <label for="tlf">Telefono:</label>
+            <input type="tel" name ="telefono" id="tlf" value="" required minlenght="" maxlength="">
+    </div> 
+    
+     <!--Fondo de pantalla de un color-->
+     <div>
+            <label for="color">Fondo de pantalla:</label>
+            <input type="color" name ="color" id="color" value="#ffffff" >
+    </div> 
+    
+    <!--Fecha-->
+     <div>
+            <label for="date">Fecha de nacimiento:</label>
+            <input type="date" name ="date" id="date" value="" >
+    </div> 
+    
+    <!--Time-->
+     <div>
+            <label for="time">Horario:</label>
+            <input type="time" name ="time" id="time" value="" >
+    </div> 
     
     <!--Otro campo standard: text area-->
      <div>
@@ -86,12 +123,13 @@
          </textarea>  
    </div> 
     
-    
-    
     <!--Boton enviar -->
     <div>
         <input type="submit" name="submit" value="Enviar" id="submit">
-    </div>  
+    </div> 
+    
+    
+    
 </section>
     
 </body>
