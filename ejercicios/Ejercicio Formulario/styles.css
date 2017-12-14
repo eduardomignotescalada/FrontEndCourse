@@ -1,7 +1,11 @@
 body {
-    background:black;
-    color:white
+    color: white
 }
-h1 {
-    color:white
+
+whitebackground {
+    background: white;
+}
+
+blackbackground {
+    background: black;
 }
