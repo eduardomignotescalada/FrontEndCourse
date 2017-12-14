@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
     <title>Ejemplos de formulario</title>
 </head>
 
 <body>
     <h1>Distintos tipos de formulario</h1>
 
-<section>    
-    
-    <h2>F1 - Formulario Login</h2>
+    <section>
+
+        <h2>F1 - Formulario Login</h2>
 
         <!-- El formulario -->
-        <form name="mi formulario"
-              id="miform"
-              action="formulario.php"
-              method="post">
-         
+        <form name="mi formulario" id="miform" action="formulario.php" method="post">
+
             <!-- Nombre del usuario -->
             <div>
                 <label for="nombre">Nombre de Usuario</label>
@@ -27,76 +25,70 @@
             <div>
                 <label for="password">Contraseña</label>
                 <input type="password" id="password" name="pass" value="">
-            </div>  
+            </div>
             <!--Repetir el password -->
             <div>
                 <label for="password2">Repita Contraseña</label>
                 <input type="pass2" id="password2" name="pass" value="">
-            </div>  
-             <!--Boton enviar 1er formulario-->
-             <div>
+            </div>
+            <!--Boton enviar 1er formulario-->
+            <div>
                 <input type="submit" name="submit1" value="Enviar" id="submit1">
-            </div>  
+            </div>
         </form>
 
-<br>
-    
-    <h2>F2 - Formulario Acepto dar mi genero</h2>
-        
-    
-    <!-- Formulario2 -->
-        <form name="mi formulario2"
-              id="miform2"
-              action="formulario.php"
-              method="post">
-            
+        <br>
+
+        <h2>F2 - Formulario Acepto dar mi genero</h2>
+
+
+        <!-- Formulario2 -->
+        <form name="mi formulario2" id="miform2" action="formulario.php" method="post">
+
             <!--Radio button elegir genero-->
-             <div>
-                 <label>Genero</label>
-                 <label for="genero_m">masculino</label>
-                 <input type="radio" id="generom" name="genero" checked="checked" value="m">
-                 <label for="genero_f">femenino</label>
+            <div>
+                <label>Genero</label>
+                <label for="genero_m">masculino</label>
+                <input type="radio" id="generom" name="genero" checked="checked" value="m">
+                <label for="genero_f">femenino</label>
                 <input type="radio" id="generof" name="genero" value="f">
             </div>
-            
+
             <!--checkbox acceptar condiciones-->
             <div>
                 <label for="condiciones">Acepta las condiciones</label>
                 <input type="checkbox" id="condiciones" name="form2" required value="">
             </div>
-            
-            <!--Boton enviar 2nd formulario-->
-             <div>
-                <input type="submit" name="submit2" value="Enviar" id="submit2">
-            </div> 
-            
-        </form> 
-<br>
 
-      <h2>F3 - Formulario Categoria SocioEconomico con categorias</h2>
+            <!--Boton enviar 2nd formulario-->
+            <div>
+                <input type="submit" name="submit2" value="Enviar" id="submit2">
+            </div>
+
+        </form>
+        <br>
+
+        <h2>F3 - Formulario Categoria SocioEconomico con categorias</h2>
 
         <!-- El formulario -->
-        <form name="mi formulario3"
-              id="miform3"
-              action="formulario.php"
-              method="post">
-            
+        <form name="mi formulario3" id="miform3" action="formulario.php" method="post">
+
             <!--Dropdown 1 standard -->
-             <div>
-                 <label for="class">Clase Social:</label>
-                 <select id="class" name="classe social">
+            <div>
+                <label for="class">Clase Social:</label>
+                <select id="class" name="classe social">
                      <option value="none">Ninguna</option>
                      <option value="b">Baja</option>
                      <option value="m">Media</option>
                      <option value="a">Alta</option>
                  </select>
-              </div>  
+            </div>
 
 
             <!--Dropdown 2 con opciones-->
-             <div>
-                 <label for="rangosalarial">Rango salarial</label>
-                 <select id="rangosalaria" name="rangosalarial">
+            <div>
+                <label for="rangosalarial">Rango salarial</label>
+                <select id="rangosalaria" name="rangosalarial">
                      <optgroup label="<20K">
                          <option value="10k" >10K</option>
                          <option value="15k">15K</option>
@@ -107,144 +99,135 @@
                          <option value="35k">35K</option>
                          <option value="50k">50K</option>
                      </optgroup>
-                 </select>   
-             </div> 
-            
+                 </select>
+            </div>
+
             <!--Boton enviar 3rd formulario-->
             <div>
                 <input type="submit" name="submit3" value="Enviar" id="submit3">
-            </div> 
-            
-        </form> 
+            </div>
 
-<br>
-    
+        </form>
+
+        <br>
+
         <h2>F4 - Datos de contacto</h2>
 
-            <!-- El formulario -->
-            <form name="mi formulario4"
-                      id="miform4"
-                      action="formulario.php"
-                      method="post">
-    
-                 <!--Pedir una url (Blog)-->
-                 <div>
-                        <label for="url">Blog:</label>
-                        <input type="url" name ="url" id="url" value="">
-                        <input type="submit" name="submit" id="submit3" value="enviar" placeholder="testplaceholder">
-                </div> 
-    
-                 <!--email con algunas caracteristicas-->
-                 <div>
-                        <label for="email">email:</label>
-                        <input type="email" name ="correo" id="email" value=""  minlenght="" maxlength="" required>
-                </div> 
+        <!-- El formulario -->
+        <form name="mi formulario4" id="miform4" action="formulario.php" method="post">
 
-                <!--Telefono con algunas caracteristicas-->
-                 <div>
-                        <label for="tlf">Telefono:</label>
-                        <input type="tel" name ="telefono" id="tlf" value=""  minlenght="" maxlength="">
-                </div> 
-                
-                <!--Boton enviar 4o formulario-->
+            <!--Pedir una url (Blog)-->
+            <div>
+                <label for="url">Blog:</label>
+                <input type="url" name="url" id="url" value="">
+                <input type="submit" name="submit" id="submit3" value="enviar" placeholder="testplaceholder">
+            </div>
+
+            <!--email con algunas caracteristicas-->
+            <div>
+                <label for="email">email:</label>
+                <input type="email" name="correo" id="email" value="" minlenght="" maxlength="" required>
+            </div>
+
+            <!--Telefono con algunas caracteristicas-->
+            <div>
+                <label for="tlf">Telefono:</label>
+                <input type="tel" name="telefono" id="tlf" value="" minlenght="" maxlength="">
+            </div>
+
+            <!--Boton enviar 4o formulario-->
             <div>
                 <input type="submit" name="submit4" value="Enviar" id="submit4">
-            </div> 
-            
-        </form> 
-    
-    <br>
-    
-    <h2>F5 - Formulario para probar otro tipos de funciones/fields etc.</h2>
+            </div>
 
-            <!-- El formulario -->
-            <form name="mi formulario5"
-                      id="miform5"
-                      action="formulario.php"
-                      method="post">
-    
-                 <!--Fondo de pantalla de un color-->
-                 <div>
-                        <label for="color">Fondo de pantalla:</label>
-                        <input type="color" name ="color" id="color" value="#ffffff" >
-                </div> 
+        </form>
 
-                <!--Fecha-->
-                 <div>
-                        <label for="date">Fecha de nacimiento:</label>
-                        <input type="date" name ="date" id="date" value="" >
-                </div> 
+        <br>
 
-                <!--Time-->
-                 <div>
-                        <label for="time">Horario:</label>
-                        <input type="time" name ="time" id="time" value="" >
-                </div> 
+        <h2>F5 - Formulario para probar otro tipos de funciones/fields etc.</h2>
 
-                <!--Otro campo standard: text area-->
-                 <div>
-                     <label for="observaciones">Observaciones</label>
-                     <textarea id="observaciones" name="rangosalarial" maxlength="50">
-                     </textarea>  
-               </div> 
+        <!-- El formulario -->
+        <form name="mi formulario5" id="miform5" action="formulario.php" method="post">
 
-                <!--Boton enviar -->
-                    <div>
-                        <input type="submit" name="submit5" value="Enviar" id="submit5">
-                    </div>
-            </form>
-            
-    <h2>F6 - Formulario del ejercicio slide 76 CREATE AN ACCOUNT</h2>
+            <!--Fondo de pantalla de un color-->
+            <div>
+                <label for="color">Fondo de pantalla:</label>
+                <input type="color" name="color" id="color" value="#ffffff">
+            </div>
 
-            <!-- El formulario -->
-            <form name="mi formulario6"
-                      id="miform6"
-                      action="answer.html"
-                      method="post">
-                <!-- Nombre del usuario -->
+            <!--Fecha-->
+            <div>
+                <label for="date">Fecha de nacimiento:</label>
+                <input type="date" name="date" id="date" value="">
+            </div>
+
+            <!--Time-->
+            <div>
+                <label for="time">Horario:</label>
+                <input type="time" name="time" id="time" value="">
+            </div>
+
+            <!--Otro campo standard: text area-->
+            <div>
+                <label for="observaciones">Observaciones</label>
+                <textarea id="observaciones" name="rangosalarial" maxlength="50">
+                     </textarea>
+            </div>
+
+            <!--Boton enviar -->
+            <div>
+                <input type="submit" name="submit5" value="Enviar" id="submit5">
+            </div>
+        </form>
+
+        <h2>F6 - Formulario del ejercicio slide 76 CREATE AN ACCOUNT</h2>
+
+        <!-- El formulario -->
+        <form name="mi formulario6" id="miform6" action="answer.html" method="post">
+            <!-- Nombre del usuario -->
             <div>
                 <label for="nombre">Nombre de Usuario</label>
                 <input type="text" id="nombre6" name="nombre6" value="" required>
             </div>
-              <!--email con algunas caracteristicas-->
-                 <div>
-                        <label for="email">email:</label>
-                        <input type="email" name ="correo" id="email" value=""  minlenght="" maxlength="" required>
-                </div> 
+            <!--email con algunas caracteristicas-->
+            <div>
+                <label for="email">email:</label>
+                <input type="email" name="correo" id="email" value="" minlenght="" maxlength="" required>
+            </div>
 
-                <!--Telefono con algunas caracteristicas-->
-                 <div>
-                        <label for="tlf">Telefono:</label>
-                        <input type="tel" name ="telefono" id="tlf" value=""  minlenght="9" required>
-                </div> 
-            
-            
-            
+            <!--Telefono con algunas caracteristicas-->
+            <div>
+                <label for="tlf">Telefono:</label>
+                <input type="tel" name="telefono" id="tlf" value="" minlenght="9" required>
+            </div>
+
+
+
             <!-- Password -->
             <div>
                 <label for="password">Contraseña</label>
                 <input type="password" id="password6" name="password6" value="" required>
-            </div>  
-            
+            </div>
+
             <!--checkbox acceptar condiciones-->
             <div>
                 <label for="condiciones6">Acepta las condiciones</label>
                 <input type="checkbox" id="condiciones6" name="form6" required value="">
             </div>
-            
-             
-                <!--Boton enviar -->
-                    <div>
-                        <input type="submit" name="submit6" value="Enviar" id="submit6">
-                    </div>
-            </form>
-    
-    <br>
-    
-    
-    
-</section>
-    
+
+
+            <!--Boton enviar -->
+            <div>
+                <input type="submit" name="submit6" value="Enviar" id="submit6">
+            </div>
+        </form>
+
+        <br>
+
+
+
+    </section>
+
 </body>
-    
+
 </html>
