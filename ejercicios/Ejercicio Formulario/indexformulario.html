@@ -3,34 +3,97 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>ejemplo de formulario</title>
   <link rel="stylesheet" href="">
 </head>
 
 <body>
   <script src=""></script>
+    <h1>Formulario Test</h1>
+    
 <section>
+    <form name="mi formulario"
+          id="miform"
+          action="formulario.php"
+          method="post"
+          
     <!--Nombre del usuario -->
     <div>
         <label for="nombre">Nombre de Usuario</label>
-        <input type="text" id="nombre" name="nombre" vale="">
+        <input type="text" id="nombre" name="nombre" value="">
     </div>
     <!-- Password -->
     <div>
         <label for="password">Contraseña</label>
-        <input type="password" id="password" name="pass" vale="">
+        <input type="password" id="password" name="pass" value="">
     </div>  
     <!--Repetir el password -->
     <div>
         <label for="password2">Repita Contraseña</label>
-        <input type="pass2" id="password2" name="pass" vale="">
+        <input type="pass2" id="password2" name="pass" value="">
     </div>  
+    
+     <!--checkbox -->
+     <div>
+         <label for"condiciones">Acepta las condiciones</label>
+            <input type="checkbox" id="condiciones" name="form2" value="">
+    </div>  
+    
+    
+    <!--Radio button -->
+     <div>
+         <label>Genero</label>
+            <label for="genero_m">masculino</label>
+            <input type="radio" id="generom" name="genero" checked="checked" value="m">
+            <label for="genero_f">femenino</label>
+            <input type="radio" id="generof" name="genero" value="f">
+    </div>  
+    
+    <!--Dropdown 1 standard -->
+     <div>
+         <label for="class">Clase Social:</label>
+         <select id="class" name="classe social">
+             <option value="none">Ninguna</option>
+             <option value="b">Baja</option>
+             <option value="m">Media</option>
+             <option value="a">Alta</option>
+         </select>
+      </div>  
+    
+    
+    <!--Dropdown 2 con opciones-->
+     <div>
+         <label for="rangosalarial">Rango salarial</label>
+         <select id="rangosalaria" name="rangosalarial">
+             <optgroup label="<20K">
+                 <option value="10k" >10K</option>
+                 <option value="15k">15K</option>
+                 <option value="20k">20K</option>
+             </optgroup>
+               <optgroup label="<50K">
+                 <option value="25k" selected="selected">25K</option>
+                 <option value="35k">35K</option>
+                 <option value="50k">50K</option>
+             </optgroup>
+         </select>   
+   </div> 
+    
+    
+    <!--Otro campo standard: text area-->
+     <div>
+         <label for="observaciones">Observaciones</label>
+         <textarea id="observaciones" name="rangosalarial" maxlength="50">
+         </textarea>  
+   </div> 
+    
+    
+    
     <!--Boton enviar -->
     <div>
         <input type="submit" name="submit" value="Enviar" id="submit">
     </div>  
-    
-    
 </section>
+    
 </body>
+    
 </html>
