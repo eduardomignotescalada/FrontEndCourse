@@ -34,11 +34,15 @@ input {
     color: darkred;
 }
 
-#.tc {
-    font-family: sans-serif;
+.tc {
+    font-family: monospace;
     font-style: italic;
-    font-size: 6;
-    color:red;
+    font-size: 4;
+    color:black;
+}
+
+.link {
+    color:white
 }
 
 #submit6 {
