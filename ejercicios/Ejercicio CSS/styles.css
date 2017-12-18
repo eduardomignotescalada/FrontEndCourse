@@ -1,0 +1,29 @@
+body {
+    background-color: #595547;
+    font-family: "Trebuchet MS", "Verdana", sans-serif;
+    color:white;
+    
+}
+
+h1 {
+    color:#9FC2F8;
+    font-size: 40pt;
+    font-weight:bold;
+    
+}
+
+h2 {
+    color:#9FC2F8
+}
+
+span {
+    color:#FFF86B
+}
+
+hr {
+    border-color: black;
+}
+
+a {
+    color: #FF4F4F;
+}
