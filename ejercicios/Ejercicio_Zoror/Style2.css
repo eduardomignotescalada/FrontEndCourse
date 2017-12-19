@@ -35,6 +35,7 @@ header ul li {
     position: relative;
     right: 1%;
     margin-left: 1%;
+    height: 212px;
 }
 
 .banner h3 {
@@ -70,12 +71,19 @@ aside {
 
 footer {
     overflow: hidden;
-    position: relative;
 }
 
-.columna1, .columna2, .columna3 {
-    float: left;
-    width=33%;
-    display:block;
+.columna {
+    float:left;
+    display:inline-block;
+    width:33%;
 }
 
+.imagenfooter{
+    width:50%;
+}
+
+.lista1, .lista2 {
+    float:left;
+    display:inline-block;
+}
