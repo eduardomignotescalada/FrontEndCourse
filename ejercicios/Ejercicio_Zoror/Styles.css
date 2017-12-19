@@ -99,20 +99,18 @@ header {}
                 display: inline-block;
             }
 
-/* section {
+ section {
     margin: 0;
     padding: 1em;
-}*/
-
-article, aside {
-    display: inline-block;
-    vertical-align: top;
-    text-align: justify;
 }
+
+
+
+/*
 
 article {
     float: left;
-    max-width: 50%;
+   max-width: 50%;
 }
 
 aside {
@@ -140,6 +138,47 @@ p {
 button {
     float: right;
 }
+
+*/
+
+
+article, aside
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+article
+{
+    width: 40%;
+    float: left;
+    margin-right: 15px;
+}
+
+.cat_icon
+{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p
+{
+    font-size: 0.8em;
+}
+
+aside
+{
+    position: relative;
+    width: 235px;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
 
 footer {
     padding: 1em;
