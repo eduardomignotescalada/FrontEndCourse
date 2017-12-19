@@ -99,10 +99,10 @@ header {}
                 display: inline-block;
             }
 
-section {
+/* section {
     margin: 0;
     padding: 1em;
-}
+}*/
 
 article, aside {
     display: inline-block;
@@ -116,7 +116,7 @@ article {
 }
 
 aside {
-    position:relative;
+    position:absolute;
     margin-left: 170px;
     border-left: 1px solid lightslategray;
     border-right: 1px solid lightslategray;
