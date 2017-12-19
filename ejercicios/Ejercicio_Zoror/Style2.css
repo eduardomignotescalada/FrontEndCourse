@@ -1,0 +1,81 @@
+body {
+    background-color: beige;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.navheader1 {
+    overflow: hidden;
+    position: relative;
+}
+
+header h3 {
+    float: left;
+}
+
+.navheader2 {
+    float: left;
+    text-align: right;
+    position: absolute;
+    right: 1%;
+}
+
+header ul li {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.banner {
+    background-image: url("Imagen_Zoror/ZororBanner2.png");
+    overflow: hidden;
+    position: relative;
+    right: 1%;
+    margin-left: 1%;
+}
+
+.banner h3 {
+    float: left;
+}
+
+.buttonseearticle {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+section {
+    overflow: hidden;
+}
+
+article {
+    float: left;
+    width: 60%;
+}
+
+aside {
+    float: left;
+    width: 30%;
+    margin: 1%;
+    background-color: grey;
+    padding: 1%;
+}
+
+.profilepic {}
+
+
+footer {
+    overflow: hidden;
+    position: relative;
+}
+
+.columna1, .columna2, .columna3 {
+    float: left;
+    width=33%;
+    display:block;
+}
+
