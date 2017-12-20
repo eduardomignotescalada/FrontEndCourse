@@ -38,8 +38,24 @@ header ul li {
     height: 212px;
 }
 
+.bannerdescription {
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    height: 10%;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: rgb(24,24,24); /* Los navegadores antiguos leerán esto */
+    background-color: rgba(24,24,24,0.8); /* Los navegadores nuevos leerán esto */
+    color: white;
+    font-size: 0.8em;
+}
+
 .banner h3 {
     float: left;
+    position: absolute;
+    bottom: 0;
+    color: white;
 }
 
 .buttonseearticle {
@@ -74,16 +90,21 @@ footer {
 }
 
 .columna {
-    float:left;
-    display:inline-block;
-    width:33%;
+    float: left;
+    display: inline-block;
+    width: 33%;
 }
 
-.imagenfooter{
-    width:50%;
+.imagenfooter {
+    width: 50%;
 }
 
-.lista1, .lista2 {
-    float:left;
-    display:inline-block;
+.lista1,
+.lista2 {
+    float: left;
+    display: inline-block;
+}
+
+.socialmedialogo {
+    text-decoration: none;
 }
