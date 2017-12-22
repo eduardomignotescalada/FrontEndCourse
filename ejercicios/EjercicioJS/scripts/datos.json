@@ -1,0 +1,10 @@
+var ciudadanos = {
+    nombre:"Ciudadanos",
+    diputados:37,
+    color:"orange"
+
+};
+
+var resultados= {
+
+};
