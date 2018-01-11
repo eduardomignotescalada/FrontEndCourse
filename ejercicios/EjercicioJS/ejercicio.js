@@ -99,6 +99,36 @@ return TotalFacture;}
 
 CalculaTotalFacture (BaseImpon,iva,irpf)
 
+/*La coreccione esta en el git hub del profe */
+
+
+var michoche= {
+marca:”Toyata”,
+matricula:”SADSAdas”,
+modelo:”Auris”,
+Km:1200,
+recorrer:function(numKm) { this.km+=numKm;}
+};
+console.log(micoche.marca);
+
+/*Para obetener el dominio y el usuario */
+var email = "pepesan@gmail.com";
+var p = email.indexOf("@");
+var emailend = email.substr(p+1);
+var emailbegin = email.substring(0,p);
+
+/*Para entender la differencia entre subst y substring */
+var teststring = "Hello World ";
+test2 = teststring.substr(4,5);
+test3 = teststring.substring(4,5);
+test2;
+test3;
+
+var paratrim = "  dos   tres    cuatro     cinco    seis   "
+trimthetext = paratrim.trim();
+
+
+
 
 
 
