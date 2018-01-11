@@ -127,6 +127,13 @@ test3;
 var paratrim = "  dos   tres    cuatro     cinco    seis   "
 trimthetext = paratrim.trim();
 
+/*Funciones de array */
+var array1 =[1,2,3];
+array2 = array1.concat([4,5,6]);
+console.log(array2);
+array3= array1.concat(4,5,6);
+console.log(array3);
+
 
 
 
