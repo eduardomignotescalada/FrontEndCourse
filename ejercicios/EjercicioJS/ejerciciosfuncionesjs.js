@@ -18,3 +18,7 @@ function loaded() {
 document.getElementById("mienlace").onclick = function(event){
     event.preventDefault()
     ;}
+
+document.getElementById("miboton").onclick = function(risaMalvada){
+    console.log("Página cargada")
+    ;}
