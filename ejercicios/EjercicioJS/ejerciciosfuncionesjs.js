@@ -1,5 +1,9 @@
-<script>
-  document.addEventListener("DOMContentLoaded", function(event) {
+
+  document.addEventListener("DOMContentLoaded", function(init) {
     console.log("Dom cargado");
   });
-</script>
+
+
+document.addEventListener("load", function(loaded) {
+   console.log("Página cargada") ;
+   });
