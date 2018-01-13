@@ -16,7 +16,7 @@ document.getElementById("enlace2").addEventListener("click", function(borrar){
         document.getElementById("parafo2").style.display = "block";
         document.getElementById("enlace2").textContent = "Ocultar contenidos";
     } else {
-        document.getElementById("parafo2").style.display = "none";
+        document.getElementById("parafo2").style.display = "hidden";
         document.getElementById("enlace2").textContent = "Show";
     }
 }
