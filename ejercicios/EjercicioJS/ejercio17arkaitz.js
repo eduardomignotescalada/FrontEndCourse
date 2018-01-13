@@ -11,12 +11,12 @@ document.getElementById("enlace1").addEventListener("click", function(borrar){
     );
 
 document.getElementById("enlace2").addEventListener("click", function(borrar){
-    if (document.getElementById("parafo2").style.display === "hidden")
+    if (document.getElementById("parafo2").style.visibility === "hidden")
         {
-        document.getElementById("parafo2").style.display = "block";
+        document.getElementById("parafo2").style.visibility = "visible";
         document.getElementById("enlace2").textContent = "Ocultar contenidos";
     } else {
-        document.getElementById("parafo2").style.display = "hidden";
+        document.getElementById("parafo2").style.visibility = "hidden";
         document.getElementById("enlace2").textContent = "Show";
     }
 }
