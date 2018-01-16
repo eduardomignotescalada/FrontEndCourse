@@ -23,6 +23,8 @@ $("#listado li:first").css("background","red");
 $("#listado li:last").css("background","blue");
 $("#listado li:nth-child(5)").css("background","yellow");
 $("input").css("background-color", "purple");
+$("#thirdli").hide();
+$("#listado").hide();
 /* Intentando hacer el Togle*/
 $("h1").click(function() {
 $("h1").toggleClass( "rojo" );
