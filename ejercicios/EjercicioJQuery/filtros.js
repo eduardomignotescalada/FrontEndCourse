@@ -11,7 +11,8 @@ function filtra() {
 function procesaTecla(event) {
     $("#myTable tr").filter(filtra);
     //console.log(this);
-    }
+  }
+
     */
 
     /* Intentando con un for i en vez de un filter */
@@ -22,7 +23,6 @@ function procesaTecla(event) {
        filtra(item)
        }
  */
-
 
 
 function init() {
