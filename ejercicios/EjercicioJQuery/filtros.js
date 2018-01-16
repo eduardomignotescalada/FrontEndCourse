@@ -8,21 +8,22 @@ function filtra() {
 
   /* Intentando con filter */
 
+/*
 function procesaTecla(event) {
     $("#myTable tr").filter(filtra);
     //console.log(this);
   }
-
-    */
+*/
+  
 
     /* Intentando con un for i en vez de un filter */
-     /*
+     
     var resultados = $("#myTable tr");
        for (i in resultados) {
        var item=resultados[i];
        filtra(item)
        }
- */
+ 
 
 
 function init() {
