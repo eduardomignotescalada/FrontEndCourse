@@ -9,12 +9,17 @@ function init(){
     $("p:last").attr("id", "parrafoultimo");
     $("p:last").addClass("rojo");
     $("p:last").removeClass("rojo");
-    console.log("#p:last");
-     $("p:first").attr("id", "iddelnombre");
+    $("p:last").addClass("verde");
+    console.log($("#parrafo2").attr("class"));
+    $("input:first").attr("id", "iddelnombre");
     console.log($("input:first").val());
+    $("[placeholder='Enter Username']").attr("id", "test");
 
 
     /* codigo del profe
+
+
+
     $("h1").attr("id","mititulo");
     //coger valor de atributo
     var valor=$("h1").attr("id");
