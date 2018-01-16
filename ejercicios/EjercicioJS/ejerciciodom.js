@@ -1,20 +1,20 @@
 function init(){
     console.log("DOM Cargado Jquery");
-    modificacionContenido();
     //modificando los atributos
     $("#parrafo1").html("Nuevo contenido del parafo1");
-    $("#parrafo2").after("<p id='parrafo3'>párrafo metido con after que sera el parrafo 3</p>");
+    $("#parrafo2").after("<p id='parrafo3'>párrafo metido AFTER el segundo con after que sera el parrafo 3 ( 1 1bis 2 3 )</p>");
     $("#parrafo3").after("<p>párrafo metido con after que sera despues del parafo 3</p>");
     $("#parrafo2").before("<p>párrafo metido entre el 1 y el 2 que sera el párrafo 1 bis</p>");
     $("#parrafo3").css("background", "yellow");
-    $("#p:last").attr("id", "parrafoultimo");
-    $("#p:last").addClass('rojo');
+    $("p:last").attr("id", "parrafoultimo");
+    $("p:last").addClass("rojo");
+    $("p:last").removeClass("rojo");
     console.log("#p:last");
-     $("#p:first").attr("id", "iddelnombre");
+     $("p:first").attr("id", "iddelnombre");
     console.log($("input:first").val());
 
 
-    /*
+    /* codigo del profe
     $("h1").attr("id","mititulo");
     //coger valor de atributo
     var valor=$("h1").attr("id");
