@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="autor" content="David Vaquero" />
+    <meta name="generator" content="Brackets" />
+    <meta name="copyright" content="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="html, ejemplo xhtml, esqueleto xhtml" />
+    <meta name="description" content="Ejemplo de Esqueleto de HTML5 con Jquery" />
+    <title>Mi titulo</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="eventos.js"></script>
+</head>
+
+<body>
+    <h1>Ejecución de código JQuery</h1>
+    <button id="miboton">Mi botón</button>
+    <button id="otroboton">Mi otro botón</button>
+    <button id="tercerboton">Tercero</button>
+    <input type="text" id="campo" name="campo" value="" />
+    <div>
+        <form id="login" action="../formularios.php" method="post">
+            <div>
+                <label for="username"></label>
+                <input type="text" name="username" id="username" value="" required placeholder="Nombre de usuario" />
+            </div>
+            <div>
+                <label for="contra"></label>
+                <input type="password" name="contra" id="contra" value="" required placeholder="Contraseña chunga" autofocus pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" />
+            </div>
+            <input type="submit" name="submit" value="Enviar" id="submit5" />
+        </form>
+    </div>
+    <button id="b1">Botón 1</button>
+    <p><a id="enlace" href="http://google.es/">Enlace a google</a></p>
+</body>
+
+</html>

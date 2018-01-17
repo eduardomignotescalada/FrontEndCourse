@@ -27,6 +27,8 @@
       $("#boton3").click(function () {
           $("#boton3").addClass("bottonverde");
       });
+      // tambien se puede hacer con this >  $(this).addClass("bottonverde");
+
       $("#input1").focus(function () {
           console.log("you focus on the input");
       });
@@ -51,7 +53,7 @@
           console.log("you defocus on the link");
       });
 
-      $('#input2').mouseleave(function () {
+      $('#input2').blur(function () {
           if ($.trim($('#input2').val()) == '') {
               console.log('el nombre es vacio')
               event.preventDefault();;}
