@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="autor" content="David Vaquero" />
+    <meta name="generator" content="Brackets" />
+    <meta name="copyright" content="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="html, ejemplo xhtml, esqueleto xhtml" />
+    <meta name="description" content="Ejemplo de Esqueleto de HTML5 con Jquery" />
+    <title>Mi titulo</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery-validator.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js"></script>
+    <script src="jvalidation.js"></script>
+
+</head>
+
+<body>
+    <h1>Ejecución de código JQuery</h1>
+    <p><a href="https://jqueryvalidation.org/">Enlace a Jquery Validation Plugin</a></p>
+    <div>
+        <form id="login" action="formularios.php" method="post">
+            <div>
+                <label for="username">Nombre de Usuario</label>
+                <input type="text" name="username" id="username" value="usuario" required placeholder="Nombre de usuario" />
+                <label id="username-error" for="username" class="error"></label>
+            </div>
+            <div>
+                <label for="contra">Contraseña</label>
+                <input type="password" name="contra" id="contra" value="" required placeholder="Contraseña chunga" autofocus pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" />
+                <label id="contra-error" for="contra"  class="error"></label>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" value="" required placeholder="Email válido"  />
+                <label id="email-error" for="email"  class="error"></label>
+            </div>
+            <input type="submit" name="submit" value="Enviar" id="submit5" />
+        </form>
+    </div>
+    <div>
+        <form class="cmxform" id="commentForm" method="post" action="formularios.php">
+            <fieldset>
+                <legend>Please provide your name, email address (won't be published) and a comment</legend>
+                <p>
+                    <label for="cname">Name (required, at least 2 characters)</label>
+                    <input id="cname" name="name" minlength="2" type="text" required>
+                </p>
+                <p>
+                    <label for="cemail">E-Mail (required)</label>
+                    <input id="cemail" type="email" name="email" required>
+                </p>
+                <p>
+                    <label for="curl">URL (optional)</label>
+                    <input id="curl" type="url" name="url">
+                </p>
+                <p>
+                    <label for="ccomment">Your comment (required)</label>
+                    <textarea id="ccomment" name="comment" required></textarea>
+                </p>
+                <p>
+                    <input class="submit" type="submit" value="Submit">
+                </p>
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form class="cmxform" id="commentForm2" method="post" action="formularios.php">
+            <fieldset>
+                <legend>Please provide your name, email address (won't be published) and a comment</legend>
+                <p>
+                    <label for="cname2">Name (required, at least 2 characters)</label>
+                    <input id="cname2" name="nombre" minlength="2" type="text" required>
+                </p>
+                <p>
+                    <label for="cemail2">E-Mail (required)</label>
+                    <input id="cemail2" type="email" name="email" required>
+                </p>
+                <p>
+                    <label for="curl2">URL (optional)</label>
+                    <input id="curl2" type="url" name="url">
+                </p>
+                <p>
+                    <label for="ccomment2">Your comment (required)</label>
+                    <textarea id="ccomment2" name="comment" required></textarea>
+                </p>
+                <p>
+                    <input class="submit" type="submit" value="Submit">
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

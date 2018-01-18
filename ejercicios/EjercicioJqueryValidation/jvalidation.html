@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js"></script>
-
+    <script src="jvalidation.js"></script>
 
 
 
@@ -17,35 +17,35 @@
 
 <body>
 
-<h1>Intentando hacer formularios con el plugin <a href="https://jqueryvalidation.org/">jqueryvalidation</a></h1>
+    <h1>Intentando hacer formularios con el plugin <a href="https://jqueryvalidation.org/">jqueryvalidation</a></h1>
 
-<form class="cmxform" id="commentForm" method="get" action="">
-  <fieldset>
-    <legend>Please provide your name, email address (won't be published) and a comment</legend>
-    <p>
-      <label for="cname">Name (required, at least 2 characters)</label>
-      <input id="cname" name="name" minlength="2" type="text" required>
-    </p>
-    <p>
-      <label for="cemail">E-Mail (required)</label>
-      <input id="cemail" type="email" name="email" required>
-    </p>
-    <p>
-      <label for="curl">URL (optional)</label>
-      <input id="curl" type="url" name="url">
-    </p>
-    <p>
-      <label for="ccomment">Your comment (required)</label>
-      <textarea id="ccomment" name="comment" required></textarea>
-    </p>
-    <p>
-      <input class="submit" type="submit" value="Submit">
-    </p>
-  </fieldset>
-</form>
-<script>
-$("#commentForm").validate();
-</script>
+    <form class="cmxform" id="commentForm" method="get" action="">
+        <fieldset>
+            <legend>Please provide your name, email address (won't be published) and a comment</legend>
+            <p>
+                <label for="cname">Name (required, at least 5 characters)</label>
+                <input id="cname" name="name" type="text">
+            </p>
+            <p>
+                <label for="cemail">E-Mail (required)</label>
+                <input id="cemail" type="email" name="email" required>
+            </p>
+            <p>
+                <label for="curl">URL (optional)</label>
+                <input id="curl" type="url" name="url">
+            </p>
+            <p>
+                <label for="ccomment">Your comment (required)</label>
+                <textarea id="ccomment" name="comment" required></textarea>
+            </p>
+            <p>
+                <input class="submit" type="submit" value="Submit">
+            </p>
+        </fieldset>
+    </form>
+    <script>
+        $("#commentForm").validate();
+    </script>
 
 </body>
 
