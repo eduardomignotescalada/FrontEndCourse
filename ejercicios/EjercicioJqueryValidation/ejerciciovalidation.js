@@ -34,4 +34,4 @@ function init(){
     //Revisar la documentación del plugin para más datos https://jqueryvalidation.org/documentation/
 }
 
-$(document).ready(init);
+$("document").ready(init);
