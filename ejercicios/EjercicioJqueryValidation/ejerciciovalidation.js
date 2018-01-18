@@ -1,4 +1,4 @@
-/* /*
+/*
 Validaciones
 1. crea un formulario típico de login en el HTML, con dos campos usuario y contraseña
 2. Haz que cuando se pulse el botón de enviar el formulario valide si el nombre de usuario y la contraseña están rellenados o no y sólo si es así deje enviar el formulario, en caso contrario deberá informar al usuario de qué campo o campos faltan por rellenar.
