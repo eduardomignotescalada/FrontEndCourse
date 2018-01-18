@@ -8,26 +8,26 @@ Validaciones
 */
 
 function init(){
+    console.log("dom cargado");
     $("#commentForm").validate({
         rules: {
             username: {
                 required:true,
-                minlength:2
+                minlength:3
             },
             password: {
                 required: true,
-                email: true,
-                minlength:2
+                minlength:5
             }
         },
         messages: {
             username: {
                 required:"Por favor introduzca un nombre",
-                minlength: "Son necesarios al menos 5 caracteres!"
+                minlength: "Son necesarios al menos 3 caracteres!"
             },
             password: {
                 required: "Necesitamos su email para poder ponernos en contacto con usted",
-                email: "Su email debe tener el formato similar a usuario@dominio.com"
+                minlength: "Son necesarios al menos 5 caracteres!"
             }
         }
     });
