@@ -19,3 +19,41 @@ Ajax
 15 Cambia la impresión de resultados del ejercicio anterior para que mediante un "bucle" imprima uno a uno los datos del array dentro de un párrafo por cada resultado
 
 */
+function botonGet() {
+    console.log("Click en el boton Get");
+    $.get("titulo.html", function (data) {
+        $("#resultados").html(data);
+    });
+}
+
+function botonPost() {
+    console.log("Click en el boton post");
+    $.post("formularios.php", {
+        name: "Pepe",
+        adress: "Calle mayor",
+        city: "Madrid",
+        age: "34"
+    })
+    $('#resultados2').load('formularios.php')
+    $('#resultados3').html('formularios.php');
+}
+
+function botonJson2() {
+    console.log("Click en el boton Json");
+    $.getJSON("ajax.json", function (result) {
+        $.each(result, function (i, field) {
+            $("div").append(field + " ");
+        });
+    });
+}
+
+
+function init() {
+    console.log("DOM Cargado Jquery");
+    //modificando los atributos
+    $("#getAjax").click(botonGet);
+    $("#postAjax").click(botonPost);
+    $("#getJson2").click(botonJson2);
+};
+
+$("document").ready(init);
