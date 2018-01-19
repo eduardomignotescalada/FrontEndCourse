@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="functions.js"></script>
+</head>
+
+<body>
+    <header class="paymentHeader">Payment</header>
+    <img src="profilephoto.jpg" alt="Girl profile photo" id="profilephoto1">
+    <div class="mainForm">
+        <form action="" method="post" class="paymentBar" id="paymentBar1">
+            <fieldset>
+                <ul class="paymentBarList">
+                    <li class="paymentBarListItem">
+                        <input name=tipAmount type=radio class="tipAmountChoice" id="tipAmountChoice1" />
+                        <label for=Notip>No tip</label></li>
+                    <li class="paymentBarListItem">
+                        <input name=tipAmount type=radio class="tipAmountChoice" id="tipAmountChoice2" />
+                        <label for=1Dollar>1$</label></li>
+                    <li class="paymentBarListItem">
+                        <input name=tipAmount type=radio class="tipAmountChoice" id="tipAmountChoice3" />
+                        <label for=2Dollar>2$</label></li>
+                    <li class="paymentBarListItem">
+                        <input name=tipAmount type=radio class="tipAmountChoice" id="tipAmountChoice4" />
+                        <label for=5Dollar>5$</label></li>
+                    <li class="paymentBarListItem">
+                        <input name=tipAmount type=radio class="tipAmountChoice" id="tipAmountChoice5" />
+                        <label for=Other>Other</label></li>
+                </ul>
+            </fieldset>
+            <fieldset class=paymentMethod>
+                <li>
+                    <img src="creditcardlogo.jpg" alt="Logo of a credit card" id="creditcardphoto1">
+                    <label for=cardnumber>Payment</label>
+                    <input id=cardnumber name=cardnumber type=number required />
+                </li>
+            </fieldset>
+            <div class="totalAmount">$8.00</div>
+            <fieldset class="">
+                <button type=submit class="nextButton">Next</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
+
+
+
+
