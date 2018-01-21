@@ -29,17 +29,26 @@ function botonGet() {
 function botonPost() {
     console.log("Click en el boton post");
     $.post("formularios.php", {
-        name: "Pepe",
-        adress: "Calle mayor",
-        city: "Madrid",
-        age: "34"
-    })
-    $('#resultados2').load('formularios.php')
-    $('#resultados3').html('formularios.php');
+            name: "Pepe",
+            adress: "Calle mayor",
+            city: "Madrid",
+            age: "34"
+        },
+        function (datos) {
+            $("#resultados2").html(datos)
+        })
 }
 
-function botonJson2() {
+function botonJson() {
     console.log("Click en el boton Json");
+    $.getJSON("ajax.json", function (datos2) {
+        $("#resultados3").html(JSON.stringify(datos2));
+    }
+}
+
+
+function botonJson2() {
+    console.log("Click en el boton Json2");
     $.getJSON("ajax.json", function (result) {
         $.each(result, function (i, field) {
             $("div").append(field + " ");
@@ -53,6 +62,7 @@ function init() {
     //modificando los atributos
     $("#getAjax").click(botonGet);
     $("#postAjax").click(botonPost);
+    $("#getJson").clcik(botonJson);
     $("#getJson2").click(botonJson2);
 };
 

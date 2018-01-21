@@ -32,6 +32,34 @@ function init(){
         }
     });
     //Revisar la documentación del plugin para más datos https://jqueryvalidation.org/documentation/
+
+
+ $("#commentForm2").validate({
+        rules: {
+            email2: {
+                required:true,
+            },
+            password2: {
+                required: true,
+                minlength:8
+            },
+
+            passwordrepeat2: {
+                required: true,
+                minlength:8,
+                equalTo:"password2"
+            },
+
+            emailrepeat2: {
+                required: true,
+                equalTo:"email2"
+            }
+        },
+
+
+    });
+    //Revisar la documentación del plugin para más datos https://jqueryvalidation.org/documentation/
 }
+
 
 $("document").ready(init);
