@@ -1,22 +1,27 @@
+
+.down-main {
+    padding-top: 7%;
+}
+
+
+
 .vertical-menu {
-   width: 20%; /* Set a width if you like */
+    width: 10%;
+    /* Set a width if you like */
+    height: 50%;
+    /* Grey background color */
+    display: block;
+    /* Make the links appear below each other */
+    text-decoration: none;
+    /* Remove underline from links */
 
 }
 
 .vertical-menu a {
-    background-color: rgb(52, 58, 64);
-    /* Grey background color */
-    color: grey;
-    /* Black text color */
-    display: block;
-    /* Make the links appear below each other */
-    padding: 35px;
-    /* Add some padding  */
     text-decoration: none;
     /* Remove underline from links */
-    width: 150%;
+    color:grey;
 }
-
 
 .vertical-menu a:hover {
     color: white;
@@ -28,3 +33,4 @@
     /* Add a green color to the "active/current" link */
     color: white;
 }
+

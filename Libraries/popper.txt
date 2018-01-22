@@ -1,11 +1,6 @@
 https://unpkg.com/popper.js 
 
 
-
-
-
-
-
 https://github.com/FezVrasta/popper.js#installation 
 
 
