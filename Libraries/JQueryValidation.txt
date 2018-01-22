@@ -1,0 +1,13 @@
+https://jqueryvalidation.org/
+
+
+Latest files on jsDelivr CDN (hotlinking welcome):
+https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js
+https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js
+https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js
+https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.min.js
+ Latest files on cdnjs CDN (hotlinking welcome):
+https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js
+https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js
+https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.js
+https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js
