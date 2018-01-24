@@ -12,6 +12,7 @@ p {
     visibility: hidden
 }
 
+/*  /END OF MAIN */
 
 /*  PARALLAX */
 
@@ -39,15 +40,15 @@ p {
     color: black;
     font-size: 2.5rem;
     text-align: center;
-    padding-top: 20px;
-    line-height: 100px;
+    padding: 20px;
+    line-height: 50px;
 }
 
 .paral p {
     font-size: 1rem;
     color: #343A40;
     text-align: justify;
-    line-height: 60px;
+    line-height: 25px;
 }
 
 /* Heading for Parallax Section */
@@ -79,6 +80,17 @@ p {
 
 .jumbotron {
     margin-bottom: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/*  /END OF PARRALAX */
+
+
+.grey-filter {
+
+    filter: grayscale(100%);
 }
 
 
@@ -165,6 +177,7 @@ section {
 }
 
 
+/*  // END OF CONTACT - VIDEO */
 
 /* FOOTER */
 
