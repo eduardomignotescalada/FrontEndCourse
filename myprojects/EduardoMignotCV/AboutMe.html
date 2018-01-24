@@ -2,54 +2,65 @@
 <html lang="">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Personal CV of Eduardo Mignot">
+    <meta name="author" content="Eduardo Mignot Escalada">
+    <title>Eduardo Mignot Escalada</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-theme.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <script src="functions.js"></script>
 </head>
 
 <body>
-    <header class="paymentHeader">Payment</header>
-    <img src="profilephoto.jpg" alt="Girl profile photo" id="profilephoto1">
-    <div class="mainForm">
-        <form action="" method="post" class="paymentBar" id="paymentBar1">
-            <fieldset>
-                <ul class="paymentBarList">
-                    <li class="paymentBarListItem">
-                        <input name=tipAmount type=radio class="tipAmountChoice" id="tipAmountChoice1" />
-                        <label for=Notip>No tip</label></li>
-                    <li class="paymentBarListItem">
-                        <input name=tipAmount type=radio class="tipAmountChoice" id="tipAmountChoice2" />
-                        <label for=1Dollar>1$</label></li>
-                    <li class="paymentBarListItem">
-                        <input name=tipAmount type=radio class="tipAmountChoice" id="tipAmountChoice3" />
-                        <label for=2Dollar>2$</label></li>
-                    <li class="paymentBarListItem">
-                        <input name=tipAmount type=radio class="tipAmountChoice" id="tipAmountChoice4" />
-                        <label for=5Dollar>5$</label></li>
-                    <li class="paymentBarListItem">
-                        <input name=tipAmount type=radio class="tipAmountChoice" id="tipAmountChoice5" />
-                        <label for=Other>Other</label></li>
-                </ul>
-            </fieldset>
-            <fieldset class=paymentMethod>
-                <li>
-                    <img src="creditcardlogo.jpg" alt="Logo of a credit card" id="creditcardphoto1">
-                    <label for=cardnumber>Payment</label>
-                    <input id=cardnumber name=cardnumber type=number required />
-                </li>
-            </fieldset>
-            <div class="totalAmount">$8.00</div>
-            <fieldset class="">
-                <button type=submit class="nextButton">Next</button>
-            </fieldset>
-        </form>
+    <header class="fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Eduardo Mignot</a>
+            <button class="navbar-toggler undeploy" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">About me</a>
+                    <a class="nav-item nav-link" href="#">Reading List</a>
+                    <a class="nav-item nav-link" href="#">Blog</a>
+                    <a class="nav-item nav-link" href="#">Wonderlust</a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- First Parallax Section -->
+    <div class="jumbotron paral2 paralsec">
+        <h1 class="display-3"></h1>
+        <p class="lead"></p>
     </div>
+
+     <!-- White section -->
+    <div class="jumbotron paral paralwhite">
+        <h1 class="display-3">Introduction</h1>
+        <p class="lead">Amet consequat eu cillum anim e ubi summis elit varias fabulas est ab legam voluptate possumus ut aliqua aliquip aut voluptate non ex quamquam exercitation, voluptate nisi occaecat ea incurreret eram varias eu dolore, iis culpa exquisitaque. Appellat et senserit iis deserunt duis quae admodum anim, tamen arbitrantur quamquam dolor quibusdam, id fugiat malis quem incididunt. Sed elit nescius nostrud, nam ex cillum mentitum, duis quibusdam qui tractavissent, o sint quae tamen deserunt, quamquam fugiat duis litteris labore si amet in mandaremus ita malis e de sunt sempiternum se laboris ita malis. Voluptate ab legam pariatur, fugiat despicationes cernantur ipsum expetendis. Dolor quo voluptate se summis ad amet mandaremus domesticarum. Mandaremus ipsum mandaremus, ab ipsum appellat senserit. Laborum amet nulla ad cillum. Cupidatat et illum laborum, labore commodo concursionibus, iis ipsum incididunt, id quae esse quem arbitror ubi multos mentitum adipisicing, deserunt sed quae qui doctrina id quae, multos iis mentitum</p>
+    </div>
+
+
+
+    <!-- Add More Parallax Sections Here -->
+
+
+
+
 </body>
 
 </html>
-
-
-
-
