@@ -1,0 +1,63 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid exercises</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--  Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Font AWESOME -->
+    <script src="https://use.fontawesome.com/d9ce42962d.js"></script>
+    <!-- JQUERY VALIDATION -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <!-- JQUERY VALIDATION ADDITIONAL METHODS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js"></script>
+</head>
+
+<body>
+    <!--
+Intenta transformar el código que se muestra de ejemplo en este ejercicio, para mantenieniendo las proporciones de los cajas del original, pero usando bootstrap para posionar el contenido en: contenedor, rows y columnas.
+-->
+    <!-- Container -->
+    <div class="container mt-4">
+        <!-- FORM -->
+        <div class="row border">
+            <div class="col-md-12">
+                <form class="cmxform" id="commentForm" method="get" action="">
+                    <div class="form-group">
+                        <label for="login-email">Email address</label>
+                        <input type="email" class="form-control" id="login-email" placeholder="name@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-email-repeat">Repeat Email address</label>
+                        <input type="email" class="form-control" id="login-email-repeat" placeholder="name@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" class="form-control" id="login-password" placeholder="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Repeat Password</label>
+                        <input type="password" class="form-control" id="login-password-repeat" placeholder="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+        </div>
+        <!-- /END OF FORM -->
+    </div>
+    <!-- /Contenedor -->
+
+
+    <script>
+        $("#commentForm").validate();
+    </script>
+</body>
+
+</html>
