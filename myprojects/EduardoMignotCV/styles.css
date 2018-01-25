@@ -5,9 +5,12 @@
 }
 
 
-
 .blank-div {
     visibility: hidden
+}
+
+.top-margin {
+	margin-top: 60px;
 }
 
 /*  /END OF MAIN */
