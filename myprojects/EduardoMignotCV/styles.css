@@ -4,9 +4,7 @@
     margin-top: 7%;
 }
 
-p {
-    text-align: justify;
-}
+
 
 .blank-div {
     visibility: hidden
@@ -180,18 +178,10 @@ section {
 
 /* FOOTER */
 
-.wn-footer {
-    padding: 2.5rem 0;
-    text-align: center;
-    color: white;
-    background-color: #607D8B;
-    border-top: .05rem solid #e5e5e5;
+.footer-personalised {
+    background-color:#343a40;
+    height: 100px;
 }
-
-.wn-footer a {
-    color: yellow;
-}
-
 
 
 /* FOR THE VERTICAL MENUE */
