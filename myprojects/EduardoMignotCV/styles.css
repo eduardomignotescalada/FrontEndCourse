@@ -185,9 +185,18 @@ section {
 
 /*  // END OF CONTACT - VIDEO */
 
+/*  // WANDERLUST */
+
 /* image-resize */
 
 .img-resize {
+}
+
+.img-villa {
+    background-image: url("images/yogawitheduardo-travel-villaburghese.jpg");
+    width: 250px;
+    height: 250px;
+    filter: grayscale(100%);
 
 }
 
