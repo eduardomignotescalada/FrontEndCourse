@@ -13,6 +13,10 @@
     <link rel="shortcut icon" href="">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="thumbnail-gallery.css">
+    <link rel="stylesheet" href="thumbnail-gallery.css">
     <!-- Bootstrap 4 theme NOT WORKING NOW -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-theme.min.css"> -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -35,6 +39,8 @@
     <script src="http://cdnjs.com/libraries/holder"></script>
     <!-- FONT AWESOME -->
     <script src="https://use.fontawesome.com/d9ce42962d.js"></script>
+    <!-- BAGUETTEBOX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <!-- MY OWN JS -->
     <script src="functions.js"></script>
 </head>
@@ -62,17 +68,73 @@
     <!-- ENDING OF THE NAVBAR -->
 
     <!-- START OF THE CONTAINER -->
-    <div class=" top-margin">
-        <div class="embed-responsive-item ">
-            <img src="images/books-how-to-win-friends-amazon.jpg" class="embed-responsive-item img-fluid img-thumbnail float-left grey-filter">
-            <img src="images/books-permission-to-screw-up-amazon.jpg" class="embed-responsive-item img-fluid img-thumbnail float-left grey-filter">
-            <img src="images/books-rework-amazon.jpg" class="embed-responsive-item img-fluid img-thumbnail float-left grey-filter">
-            <img src="images/books-the-100-startup-amazon.jpg" class="embed-responsive-item img-fluid img-thumbnail float-left grey-filter">
-            <img src="images/books-the-4-hour-work-week-amazon.jpg" class="embed-responsive-item img-fluid img-thumbnail float-left grey-filter">
-            <img src="images/books-the-everything-store-amazon.jpg" class="embed-responsive-item img-fluid img-thumbnail float-left grey-filter">
-            <img src="images/books-the-lean-startup-amazon.jpg" class="embed-responsive-item img-fluid img-thumbnail float-left grey-filter">
-            <img src="images/books-the-power-of-habit-amazon.jpg" class="embed-responsive-item img-fluid img-thumbnail float-left grey-filter">
-            <img src="images/books-The-subtle-art-of-amazon.jpg" class="embed-responsive-item img-fluid img-thumbnail float-left grey-filter">
+    <div class="row top-margin">
+
+        <div class="col-sm-6 col-md-4 col-lg-3 xl-2">
+            <div class="thumbnail">
+                <a class="lightbox" href="../images/park.jpg">
+                        <img class="img-fluid img-thumbnail grey-filter img-resize lightbox" src="../EduardoMignotCV/images/books-how-to-win-friends-amazon.jpg" alt="Park">
+                    </a>
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 xl-2">
+            <div class="thumbnail">
+                <a class="lightbox" href="../images/bridge.jpg">
+                        <img class="img-fluid img-thumbnail grey-filter img-resize lightbox" src="../EduardoMignotCV/images/books-how-to-win-friends-amazon.jpg" alt="Bridge">
+                    </a>
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 xl-2">
+            <div class="thumbnail">
+                <a class="lightbox" href="../images/tunnel.jpg">
+                        <img class="img-fluid img-thumbnail grey-filter img-resize lightbox" src="../EduardoMignotCV/images/books-how-to-win-friends-amazon.jpg" alt="Tunnel">
+                    </a>
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 xl-2">
+            <div class="thumbnail">
+                <a class="lightbox" href="../images/coast.jpg">
+                        <img class="img-fluid img-thumbnail grey-filter img-resize lightbox" src="../EduardoMignotCV/images/books-how-to-win-friends-amazon.jpg" alt="Coast">
+                    </a>
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 lg-3 xl-2">
+            <div class="thumbnail">
+                <a class="img-fluid img-thumbnail grey-filter img-resize lightbox" href="./EduardoMignotCV/images/books-how-to-win-friends-amazon.jpg">
+                        <img src="../images/rails.jpg" alt="Rails">
+                    </a>
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a class="lightbox" href="../images/traffic.jpg">
+                        <img src="../images/traffic.jpg" alt="Traffic">
+                    </a>
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
         </div>
     </div>
 

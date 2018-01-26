@@ -1,5 +1,6 @@
 function init() {
     console.log("DOM Cargado Jquery");
+    baguetteBox.run('.tz-gallery');
     //function for the nav-bar
     window.onclick = function (event) {
         if (!event.target.matches(".undeploy")) {
@@ -9,7 +10,7 @@ function init() {
         }
     }
     let dropdown = document.getElementById("navbarNavAltMarkup");
-   //function for lightbox
+    //function for lightbox
     $(document).on('click', '[data-toggle="lightbox"]', function (event) {
         event.preventDefault();
         $(this).ekkoLightbox();
