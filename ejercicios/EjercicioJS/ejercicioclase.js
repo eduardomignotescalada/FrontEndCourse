@@ -39,7 +39,7 @@ class Moto {
         this.setMatricula = function (matricula) {
             this.matricula = matricula;
         };
-        setKm = function (km) {
+        this.setKm = function (km) {
             this.km = km;
         };
         this.getMatricula = function () {
