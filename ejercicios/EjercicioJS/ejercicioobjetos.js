@@ -65,25 +65,42 @@ Cliente.prototype.toString = function () {
 }
 /* 11.- Imprime por pantalla el valor devuelto por el método toString del primer objeto */
 console.log("'El nombre del primer cliente es " + clienteprimero.nombre.toString() + ", el email del primer cliente es " + clienteprimero.email.toString());
+// correcion del profe
+console.log(clienteprimero.toString());
 /* 12.- Añade un método toString similar en el segundo objeto */
+//coreccion del profe
+toString()
 /*  13.- Imprime por pantalla el valor devuelvo por el método toString del segundo objeto */
 console.log("'El nombre del segundo cliente es " + clientesegundo.nombre.toString() + ", el email del segundo cliente es " + clientesegundo.email.toString());
+//correcion del profe
+console.log(clientesegundo.toString());
 /* 14.- Añade un método setter y otro getter al primero objeto por cada propiedad definida en él, sin contar los métodos. */
+//en caso del profe getnombre esta de color
+getNombre: function() {
+    return this.nombre;
+},
+setNombre: function(nombre) {
+    this.nombre=nombre;
+},
 /* 15.- Utiliza todos los métodos definidos en el primer objeto dentro de tu código JS */
-/* // NO ME SALE
- Cliente.prototype.apellido = apellido;
-
+/* // La idea es gracias a los get y los set puede despues utilizar estos valores sin tocarlos realmente
+// la idea es en vez de clienteprimero.apellido = Pepito podre hacer cliente.setAppelido("Pepito")
+Cliente.prototype.apellido = apellido;
 clienteprimero.setnombre("JuanGet");
 clienteprimero.setemail("juanget@gmail.com");
 console.log(clienteprimer.nombre); */
 
 /* 16.- Introduce una nueva propiedad en el objeto cliente (1º) llamada facturacion, su valor inicial será un array de 2 posiciones con dos elementos de tipo numérico 4 y 25*/
+    //el profe lo ha hecho todo distinto porque no creo una clase al principio sino un objeto normal asi que no hacia falta el prototype
 Cliente.prototype.facturacion = [0, 0];
 clienteprimero.facturacion = [4, 25];
 /* 17.- Imprime por pantalla el valor de la primera posición del array almacenado en la propiedad facturacion del primer objeto*/
 console.log("el primer numero de la factura del primer cliente es " + clienteprimero.facturacion[0]);
 /* 18.- Haz un método dentro del primer objeto llamado addFactura, al que se le pase como parámetro un número, que almacene ese valor como una nueva posición al final del array de facturacion del primer objeto*/
-clienteprimero.facturacion.push(2);
+addFactura:function(numero) {
+   this.facturacion.push(numero)
+},
+// esto era mi metodo clienteprimero.facturacion.push(2);
 /* 19.- Al imprimir por pantalla el número de elementos de array facturacion debería indicar que tiene 3 elementos*/
 console.log("El array tiene " + clienteprimero.facturacion.length + " elementos dentro del array")
 /* 20.- Crea un nuevo método en el primer objeto que sea capaz de devolver el total de facturación de ese objeto, total de los valores almacenados en el array facturacion del primero objeto.El método se llamara totalFacturacion*/
