@@ -1,5 +1,5 @@
 /*OK 1.- Crea un html con un archivo externo JS asociado para resolver estos ejercicios
-2.- Crea un objeto Javascript que se llame cliente, dentro del objeto coloca las siguientes propiedades: nombre del cliente, direccion_fisica, email ,tlf y persona_contacto. Al crear el objeto colócale valores a cada propiedad.
+OK 2.- Crea un objeto Javascript que se llame cliente, dentro del objeto coloca las siguientes propiedades: nombre del cliente, direccion_fisica, email ,tlf y persona_contacto. Al crear el objeto colócale valores a cada propiedad.
 3.- Crea otro objeto con el nombre segundoCliente con las mismas propiedades pero con distintos valores.
 4.- Imprime por pantalla el nombre del primer objeto
 5.- Imprime por pantalla el email del segundo objeto
