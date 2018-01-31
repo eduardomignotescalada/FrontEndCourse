@@ -20,7 +20,7 @@
 
 /* 7.- Crea la clase Nota que tenga dos atributos: valor, asignatura */
 /* 10.- Modifica el constructor de la clase Nota para que admita 2 parámetros, uno para cada propiedad. Los parámetros deben poder ser opcionales.  */
-var Nota = function (valor=0, asignatura = "") {
+var Nota = function (valor = [], asignatura = "") {
     this.valor = valor;
     this.asignatura = asignatura;
     /* 9.- Mete los getter y los setter de la clase Nota */
@@ -45,12 +45,13 @@ var Nota = function (valor=0, asignatura = "") {
 /* 5.- Haz que el constructor de la clase Alumno permita meter los 4 valores a las 4 propiedades del objeto, haz que estos parámetros sean opcionales */
 /* 13.- en el constructor añade un parámetro más que será el array de notas */
 
-var Alumno = function (nombre = " ", dni = " ", tlf = " ", email = " ",notas=[]) {
+var Alumno = function (nombre = " ", dni = " ", tlf = " ", email = " ", valor = []) {
     this.nombre = nombre;
     this.dni = dni;
     this.tlf = tlf;
     this.email = email;
-    this.notas = notas;
+    this.notas = new Nota();
+    this.notas.valor = valor;
 
     /* 4.- Añade los getter y setter a las clase Alumno */
     this.setNombre = function (nombre) {
@@ -110,8 +111,8 @@ console.log("La nota de la asignatura " + mates1.asignatura + " es " + mates1.va
     Alumno.notas.push(nota1);
 }; */
 /* 16.- Crea un nuevo objeto Nota e introduce este nuevo objeto en un objeto de tipo Alumno mediante el método definido en el anterior ejercicio */
-juan.notas.push(new Nota(5,"Matematicas"));
-console.log(juan.notas);
+juan.notas.valor.push(5, 10, 9, 9, 8, 4);
+console.log(juan.notas.valor);
 
 array = [];
 notaTotal = 0;
