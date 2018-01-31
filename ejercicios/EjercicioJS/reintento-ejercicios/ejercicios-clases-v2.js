@@ -6,6 +6,18 @@
 var Moto = function(matricula,km=O){
     this.matricula=matricula;
     this.km=km;
+    this.getMatricula=function(){
+        return this.matricula;
+    }
+    this.setMatricula=function(matricula){
+        this.matricula=km;
+    }
+    this.getKm=function(){
+        return this.km;
+    }
+    this.setKm=function(km){
+        this.km=km;
+    }
 }
 /*
 3.- Di que la clase Moto tiene una característica llamada matricula
@@ -36,9 +48,21 @@ console.log("la matricula de mi burra es "+miburra.matricula);
 */
 
 var mitwingo = new Moto();
+console.log("mytwingo tiene este numero de kilometros por defecto: "+mitwingo.km)
+
+
+/*
+10.- Crea los getter y setter de km y matricula para la clase Moto
+*/
+
+
+
 /*
 11.- Utilízalos desde el objeto miburra
 */
+miburra.setKm(2);
+var matriculamiburra = miburra.getMatricula;
+console.log("matricula de mi burra es "+matriculamiburra)
 
 /*
 12.- Haz que el constructor de la clase Moto pueda disponer de dos parámetros para las dos propiedades de Moto: km y matricula
