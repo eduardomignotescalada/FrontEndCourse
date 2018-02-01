@@ -5,7 +5,7 @@ console.log("Ejercicio empezando con JS5");
 /*
 2.- Crea una clase que permita disponer de las características de una moto, la clase de llamará Moto.
 */
-var Moto = function (matricula, km = "O") {
+var Moto = function (matricula="", km = "O") {
     this.matricula = matricula;
     this.km = km;
     this.getMatricula = function () {
@@ -153,7 +153,7 @@ console.log("la matricula de mi burra es " + miburra2.matricula);
 9.- Demuéstralo creando otro objeto de la clase Moto e imprimiendo este valor por pantalla
 */
 
-var mitwingo2 = new Moto();
+var mitwingo2 = new Moto2();
 console.log("mytwingo tiene este numero de kilometros por defecto: " + mitwingo2.km)
 
 

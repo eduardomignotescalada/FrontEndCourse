@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .box {
+            border-color: black;
+            background-color: red;
+            width: 100px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="box" id=c1 draggable=true>
+        <h3>Titulo</h3>
+        <p>contenido</p>
+    </div>
+    <div class="box" id=c2 draggable=true>
+        <h3>Titulo 2</h3>
+        <p>contenido</p>
+    </div>
+
+
+
+    <script>
+        //functions defined in init
+        function comenzar(event) {
+            console.log("Comenzando");
+            //transfiriendo datos
+            event.dataTransfer.setData("text", event.target.id);
+        }
+
+        function entrar() {
+            console.log("entrado");
+        }
+
+        function sobrevolar(event) {
+            console.log("Sobrevolando");
+            //evitando problemas al soltar
+            event.preventDefault()
+        }
+
+        function salir() {
+            console.log("salido");
+        }
+
+        function soltar(event) {
+            console.log("soltando");
+            //evitando problemas al soltar
+            event.preventDefault()
+            //cogiendo datos
+            var data = event.dataTransfer.getData("text");
+            var midiv = document.getElementById(event.target.id);
+            console.log(midiv);
+        }
+
+
+
+        //function init
+        function init() {
+            console.log("Dom cargado");
+            var c1 = document.getElementById("c1");
+            var c2 = document.getElementById("c2");
+            c1.addEventListener("dragstart", comenzar);
+            c2.addEventListener("dragenter", entrar);
+            c2.addEventListener("dragover", sobrevolar);
+            c2.addEventListener("dragleave", salir);
+            c2.addEventListener("drop", soltar);
+        }
+        document.addEventListener("DOMContentLoaded", init);
+    </script>
+</body>
+
+</html>

@@ -50,7 +50,7 @@ var Alumno = function (nombre = "", dni = "", tlf = "", email = "", notas = []) 
         var sumaNota = 0;
         var mediaNota = 0;
         for (i in this.notas) {
-            sumaNota = sumaNota + this.notas[i];
+            sumaNota = sumaNota + this.notas[i].valor;
             return sumaNota;
         }
         mediaNota = sumaNota / this.notas[i].lenght;
