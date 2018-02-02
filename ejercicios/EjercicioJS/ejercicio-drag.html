@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de drag</title>
+    <style>
+        #div1,
+        #div2,
+        #div3 {
+            float: left;
+            width: 150px;
+            height: 50px;
+            margin: 10px;
+            border: 1px solid black;
+            display: inline-block;
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Ejercicios de drag </h1>
+
+    <h5>Enlace del ejercicio https://github.com/pepesan/ejemplos-html5/edit/master/ejercicios/drag.js </h5>
+    <ul>
+        <li>1.- Crea un fichero HTML con un fichero JS asociado > OK </li>
+        <li>2.- Crea un div contenedor que tenag 3 divs dentro > OK </li>
+        <li>3.- Pinta los 3 divs para que quepan los tres a la vez a la misma altura y tengan fondo rojo OK</li>
+        <li>4.- El primer div será arratrable, comprueba que se puede arrastrar > OK</li>
+        <li>5.- asigna el evento dragstart al primer div, asócialo con una función llamada empezando > OK </li>
+        <li>6.- dentro de la función empezando recuerda mandar un dato con el índice "iden" y con el valor del identificativo del primer div (setData)</li>
+        <li>7.- Haz que cuando se haya entrado en el segundo div saque un mensaje por consola (arrastrando) > OK </li>
+        <li>8.- Haz que cuando se haya salido del segundo div saque un mensaje por consola</li>
+        <li>9.- Haz que cuando se pasee sobre el tercer div anule el comportamiento por defecto (arrastrando)</li>
+        <li>10.- Haz cuando se suelte el arrastrable (drop) en el tercer párrafo, anula el comportamiento por defecto y saca un mensaje por pantalla</li>
+        <li>11.- En la función anterior saca por pantalla el identificativo del div que se haya mandado en el dragstart</li>
+    </ul>
+
+    <div id="div1" draggable="true" ondragstart="drag(event)">
+        Div 1 arrastrable
+    </div>
+
+    <div id="div2" ondrop="drop(event)" ondragenter="enter(event)" ondragover="allowDrop(event)" ondragleave="leave(event)">
+        Div 2
+    </div>
+
+    <div id="div3" ondrop="drop(event)">
+        Div 3
+    </div>
+
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+            console.log("dragging")
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            console.log("droped in div2");
+        }
+
+        function dropbis(ev) {
+            ev.preventDefault();
+            console.log("droped in div3");
+        }
+
+        function enter(ev) {
+            ev.preventDefault();
+            console.log("entered in div 2");
+        }
+
+        function leave(ev) {
+            ev.preventDefault();
+            console.log("saliendo");
+        }
+    </script>
+
+
+</body>
+
+</html>
