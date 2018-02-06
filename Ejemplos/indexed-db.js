@@ -69,17 +69,16 @@ function conectaDB() {
 
 function init() {
     console.log("init");
-    conectaDB();
+
 
     if (!window.indexedDB) {
         console.log("Your browser doesn't support a stable version of IndexedDB.")
     } else {
         console.log("IndexedDB HTML5 está soportada en este navegador.");
+        conectaDB();
         document.getElementById("escribeDB").addEventListener("click", escribe);
         document.getElementById("leeDB").addEventListener("click", lee);
     }
-
-
 
 }
 document.addEventListener("DOMContentLoaded", init);
