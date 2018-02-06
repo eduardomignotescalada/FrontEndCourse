@@ -1,19 +1,15 @@
 // en type script
 class Person {
-    name:string;
-age:number;
-
+    surname:string;
+    age:number;
 }
-
-
-
 
 
 //en Js normal
 
-function getAdudltsPersons(a) {
-    var result = a.filtering((x) = >  {
-        return x.age > 19;
+function getAdudlts(a:Persons[]) { 
+    var result = a.filter((function(person) {
+        return person.age > 19;
 
     });
     return result
