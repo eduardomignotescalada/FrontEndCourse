@@ -1,23 +1,28 @@
-$("#busqueda").on("keyup change", function() {
-   var value = this.value;
-   $("#dom_element").text(value);
-});
 
+/* Time set sin delay
+
+$("#busqueda").on("keyup change", function () {
+    var value = this.value;
+    $("#dom_element").text(value);
+    console.log("esta buscando")
+});
+*/
 
 /* Time set with delay */
 
-$("#busqueda").delay(800).on("keyup change", function() {
-   var value = this.value;
-   $("#dom_element").text(value);
+$("#busqueda").delay(800).on("keyup change", function () {
+    var value = this.value;
+    $("#dom_element").text(value);
+    console.log("esta buscando")
 });
 
 /* Time set with setTimeOut */
 
 
 
-$("#busqueda").delay(800).on("keyup change", function() {
-   var value = this.value;
-   $("#dom_element").text(value);
+$("#busqueda").delay(800).on("keyup change", function () {
+    var value = this.value;
+    $("#dom_element").text(value);
 });
 
 /* Time set with setTimeOut */
