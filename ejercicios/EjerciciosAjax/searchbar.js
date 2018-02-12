@@ -31,6 +31,8 @@ function peticionGetJson() {
 function filter() {
     criterio = $("#myInput").val();
     console.log(criterio);
+    $("#resultados-filtrados").html("");
+    console.log("borrar");
     $.getJSON("http://data.colorado.gov/resource/4ykn-tg5h.json?entitystatus=Good%20Standing&principalzipcode=80001",
         function (resultados) {
             var tiendas = resultados;
@@ -43,3 +45,26 @@ function filter() {
 
         })
 }
+
+
+/*
+Correcion de elvira
+
+var tiendas;
+var criterio;
+function cogeDatos(){
+    $.get("http://data.colorado.gov/resource/4ykn-tg5h.json?entitystatus=Good%20Standing&principalzipcode=80001", function(datos){
+        tiendas = datos;
+        for(i in tiendas){
+           if(tiendas[i].agentfirstname!=undefined && tiendas[i].agentfirstname.toLowerCase().includes(criterio)){
+            $("#resultados").append(`<li>Hemos encontrado a ${tiendas[i].agentfirstname} en la posicion ${i}</li>`);
+            }
+    }
+    })
+};
+$("#texto").keyup(function(){
+    criterio = $("#texto").val();
+});
+
+
+*/
