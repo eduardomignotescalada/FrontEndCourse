@@ -11,8 +11,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="">
-    <script src="segundo-ejercicio.js"></script>
+    <link rel="stylesheet" href="searchbar.css">
+    <script src="searchbar.js"></script>
 </head>
 
 <body>
@@ -30,28 +30,19 @@
             <li>6.- Aplicar a que se presenten sólo los resultados que contengan el texto de la variable criterio, según vaya cambiándose (tecla a tecla)</li>
         </ul>
 
-        <h4>Enlace Github Pepesan</h4>
-        <a href="https://github.com/pepesan/ejemplos-html5/blob/master/ejercicios/segundo.js">https://github.com/pepesan/ejemplos-html5/blob/master/ejercicios/segundo.js</a>
+        <h2>Lista de Tienda</h2>
 
-        <h4>Apartado donde hacer el ejercicio</h4>
-
-        <form>
-            Campo de busqueda:<br>
-            <input type="text" name="busqueda" id="busqueda">
-        </form>
+        <input type="text" id="myInput"  placeholder="Search for stores.." title="Type in a name">
 
         <div id="resultados-filtrados">
-            Lista filtrada
-
-
+            <h4>Resultados filtrados</h4>
         </div>
-        <div id="resultados-get">
-            Lista no filtrada
-
-
+        <div id="resultados-no-filtrados">
+            <h4>Resultados no filtrados</h4>
         </div>
+
+
     </div>
-
 </body>
 
 </html>
