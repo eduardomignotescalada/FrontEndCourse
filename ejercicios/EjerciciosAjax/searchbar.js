@@ -28,9 +28,6 @@ function peticionGetJson() {
 
 }
 
-
-
-
 function filter() {
     criterio = $("#myInput").val();
     console.log(criterio);
