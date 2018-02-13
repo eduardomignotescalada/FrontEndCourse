@@ -1,41 +1,40 @@
 var db;
 
-function pintaDatos(datos) {
-    listado.innerHTML = "";
-    for (var item of datos) {
-        listado.innerHTML += "<li>" + item.name + "<button class='borrar' id='item-" + item.id + "' data-id='" + item.id + "'>borrar</button</li>";
-        var botonid = "item-" + item.id;
-        console.log(botonid);
-        var miboton = document.getElementById(botonid);
-        miboton.addEventListener("click", function (event) {
-            console.log("borrando");
-            var id = event.target.data - id;
-            transaction = db.transaction(["employee"]);
-            objectStore = transaction.objectStore("employee");
-            var cogido = objectStore.get(item.id);
-            cogido.onsuccess = function () {
-                console.log("objeto encontrado");
-                transaction = db.transaction(["employee"], "readwrite");
+function pintaDatos(datos){
+    listado.innerHTML="";
+        for (var item of datos){
+            listado.innerHTML+="<li>"+item.name+"<button class='borrar' id='item-"+item.id+"' data-id='"+item.id+"'>borrar</button</li>";
+           var botonid="item-"+item.id;
+            console.log(botonid);
+            var miboton=document.getElementById(botonid);
+            miboton.addEventListener("click",function(event){
+                console.log("borrando");
+                var id=event.target.data-id;
+                transaction = db.transaction(["employee"]);
                 objectStore = transaction.objectStore("employee");
-                var borrado = objectStore.delete(item.id);
-                borrado.onsuccess = function () {
-                    console.log("borrado");
-                    miboton.parentElement.parentElement.removeChild(miboton.parentElement);
+                var cogido=objectStore.get(item.id);
+                cogido.onsuccess=function(){
+                    console.log("objeto encontrado");
+                    transaction = db.transaction(["employee"],"readwrite");
+                    objectStore = transaction.objectStore("employee");
+                    var borrado=objectStore.delete(item.id);
+                    borrado.onsuccess=function(){
+                        console.log("borrado");
+                        miboton.parentElement.parentElement.removeChild(miboton.parentElement);
+                    }
                 }
-            }
 
-        });
-    }
+            });
+        }
 }
-
-function cogeTodos() {
+function cogeTodos(){
     var transaction = db.transaction(["employee"]);
     var objectStore = transaction.objectStore("employee");
-    var datos = [];
-    var miCursor = objectStore.openCursor();
-    miCursor.onsuccess = function (event) {
+    var datos=[];
+    var miCursor=objectStore.openCursor();
+    miCursor.onsuccess = function(event) {
         var cursor = event.target.result;
-        if (cursor) {
+        if(cursor) {
             console.log(cursor.value);
             datos.push(cursor.value);
             cursor.continue();
@@ -45,7 +44,7 @@ function cogeTodos() {
         }
 
     };
-    miCursor.onerror = function (evento) {
+    miCursor.onerror=function(evento){
         console.log("Algo ha ido chungo");
     };
 
@@ -83,7 +82,6 @@ function lee() {
 }
 
 function escribe() {
-    console.log("test");
     var request = db.transaction(["employee"], "readwrite")
         .objectStore("employee")
         .add({
@@ -101,7 +99,6 @@ function escribe() {
         console.log("No se ha podido añadir a la BBDD");
     }
 }
-
 function modifica() {
     var request = db.transaction(["employee"], "readwrite")
         .objectStore("employee")
@@ -168,3 +165,4 @@ function init() {
 
 
 }
+document.addEventListener("DOMContentLoaded", init);
