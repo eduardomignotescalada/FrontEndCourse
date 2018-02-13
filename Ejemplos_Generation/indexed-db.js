@@ -83,6 +83,7 @@ function lee() {
 }
 
 function escribe() {
+    console.log("test");
     var request = db.transaction(["employee"], "readwrite")
         .objectStore("employee")
         .add({
