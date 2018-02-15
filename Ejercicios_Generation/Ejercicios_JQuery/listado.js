@@ -18,9 +18,9 @@ var app = {
                 tr.appendTo('#tabla');
             });
             $.each(data, function (key, val) {
-                var grid1 = $('<div class="row"></div>');
+                var grid1 = $("<div class='row'></div>");
                 $.each(val, function (k, v) {
-                    $('<div class="col-md-6">' + v + '</div>').appendTo(grid1);
+                    $("<div class='col-md-6'>' + v + '</div>").appendTo(grid1);
                 });
                 grid1.appendTo('#containergrid');
             });
