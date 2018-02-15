@@ -14,25 +14,24 @@ function filter() {
     console.log(criterio);
     $("#resultados-filtrados").html("");
     console.log("borrar");
-    $.getJSON("http://data.colorado.gov/resource/4ykn-tg5h.json?entitystatus=Good%20Standing&principalzipcode=80001",
+    $.getJSON("http://www.mocky.io/v2/5a54ae822d00005f235b1cd2",
         function (resultados) {
             var tiendas = resultados;
             $.each(resultados, function (i, results) {
-                if (results.agentfirstname != undefined && results.agentfirstname.includes(criterio)) {
-                    $("#resultados-filtrados").append("<li>" + results.agentfirstname + "</li>");
+                if ((results.titulo != undefined && results.titulo.includes(criterio)) || (results.autor != undefined && results.autor.includes(criterio))) {
+                    $("#resultados-filtrados").append("<li>" + results.titulo + ' de ' + results.autor + "</li>");
                 }
             });
             console.log("presentar los resultados en HTML")
 
         })
 }
-
-
 var app = {
     init: function () {
         console.log("Dom cargado");
         //gestionar la petición ajax;
         gettingData();
+        $("#myInputTitle").keyup(filter);
     }
 }
 $(document).ready(app.init);

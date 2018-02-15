@@ -13,28 +13,32 @@
 </head>
 
 <body>
-
-    <h3>Enunciado del ejercicio</h3>
-    <ul>
-        <li>1.- Crear un código html con un JS asociado</li>
-        <li>2.- Descargar los datos mediante uan petición AJAX desde una URL "http://www.mocky.io/v2/5a54ae822d00005f235b1cd2" JSON y colocarlos en una variable llamada datos</li>
-        <li>3.- Presentar los datos en un formato listado (ul+li)</li>
-        <li>4.- Presentar los datos en un formato de tabla (tr+td)</li>
-        <li>5.- Presentar los datos en un formato grid (bootstrap+col-6)</li>
-        <li>6.- Guardar los datos en indexeddb para luego consultarlos antes de hacer la petición ajax </li>
-    </ul>
-    <br>
-
-    <h2>Buscador de Libros (case sensitive)</h2>
-
-    <input type="text" id="myInputTitle" placeholder="Search for book title" title="Type_in_a_title">
-
-
-    <h3>Listado UL</h3>
-    <ul id="listado">
-        <!--li> titulo </li-->
-    </ul>
-
+    <div id="container">
+        <div id="enunciado">
+            <h3>Enunciado del ejercicio</h3>
+            <ul>
+                <li>1.- Crear un código html con un JS asociado</li>
+                <li>2.- Descargar los datos mediante uan petición AJAX desde una URL "http://www.mocky.io/v2/5a54ae822d00005f235b1cd2" JSON y colocarlos en una variable llamada datos</li>
+                <li>3.- Presentar los datos en un formato listado (ul+li)</li>
+                <li>4.- Presentar los datos en un formato de tabla (tr+td)</li>
+                <li>5.- Presentar los datos en un formato grid (bootstrap+col-6)</li>
+                <li>6.- Guardar los datos en indexeddb para luego consultarlos antes de hacer la petición ajax </li>
+            </ul>
+        </div>
+        <div id="presentacion_de_resultados">
+            <br>
+            <h2>Buscador de Libros por titulo(case sensitive)</h2>
+            <input type="text" id="myInputTitle" placeholder="Search for book title" title="Type_in_a_title">
+            <h3>Listado filtrado</h3>
+            <ul id="resultados-filtrados">
+                <!--li> titulo </li-->
+            </ul>
+            <h3>Listado no filtrado</h3>
+            <ul id="listado">
+                <!--li> titulo </li-->
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>
