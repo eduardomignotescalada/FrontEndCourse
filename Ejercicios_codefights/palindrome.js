@@ -3,9 +3,9 @@ function checkPalindrome(inputString) {
     console.log(inputString);
     console.log(reversedinputString);
     if (inputString == reversedinputString) {
-        return (true);
+        return true;
         else {
-            return (false);
+            return false;
         }
     }
 }
