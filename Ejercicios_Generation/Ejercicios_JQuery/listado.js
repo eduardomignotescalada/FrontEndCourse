@@ -16,7 +16,10 @@ var app = {
                     $('<td>' + v + '</td>').appendTo(tr);
                 });
                 tr.appendTo('#tabla');
+
             });
+            $('#tabla').DataTable();
+
             $.each(data, function (key, val) {
                 var grid1 = $("<div class='row'></div>");
                 $.each(val, function (k, v) {
